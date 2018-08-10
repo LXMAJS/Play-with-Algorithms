@@ -12,7 +12,7 @@ using namespace std;
 namespace SelectionSort {
 
     // select sort
-    void Sort(int arr[], int n){
+    void selectionSort(int arr[], int n){
         for (int i = 0; i < n; i++) {
 
             int minIndex = i;

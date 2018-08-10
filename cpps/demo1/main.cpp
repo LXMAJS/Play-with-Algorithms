@@ -1,4 +1,6 @@
 #include <iostream>
+#include "SelectionSort.h"
+#include "SortTestHelper.h"
 
 using namespace std;
 
@@ -15,12 +17,13 @@ void insertionSort(int arr[], int n) {
 }
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    int arr[10] = {1,2,2,3,5,2,5,6,7,4};
 
-    selectionSort(arr, 10);
+    int n = 10000;
+    int* arr_1 = SortTestHelper::generateRandomArray(n, 0, n);
 
-    for(int i = 0; i < 10; i++)
-        cout<<arr[i]<<endl;
+    SortTestHelper::testSort("Selection Sort", SelectionSort::selectionSort, arr_1, n);
+
+
+    delete[] arr_1;
     return 0;
 }

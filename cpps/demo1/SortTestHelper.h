@@ -69,6 +69,16 @@ namespace SortTestHelper {
     template <typename T>
     void testSort(string sortName, void(*sort(T arr[], int n)), T arr[], int n){
 
+        // count times when sorting
+        clock_t  startTime = clock();
+        sort(arr, n);
+        clock_t  endTime = clock();
+
+        assert(isSorted(arr, n));
+
+        cout << sortName << " : " << double(endTime - startTime) / CLOCKS_PER_SEC << " s" << endl;
+
+        return;
     }
 }
 
