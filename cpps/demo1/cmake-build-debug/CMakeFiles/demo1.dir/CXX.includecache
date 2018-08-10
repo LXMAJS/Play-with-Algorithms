@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/lijin/Documents/github/issues/cpps/demo1/SelectionSort.h
+/Users/lijin/Documents/github/issues/cpps/demo1/SortAlogrithms.h
 iostream
 -
 
@@ -25,8 +25,8 @@ string
 /Users/lijin/Documents/github/issues/cpps/demo1/main.cpp
 iostream
 -
-SelectionSort.h
-/Users/lijin/Documents/github/issues/cpps/demo1/SelectionSort.h
+SortAlogrithms.h
+/Users/lijin/Documents/github/issues/cpps/demo1/SortAlogrithms.h
 SortTestHelper.h
 /Users/lijin/Documents/github/issues/cpps/demo1/SortTestHelper.h
 

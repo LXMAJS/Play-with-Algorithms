@@ -1,29 +1,24 @@
 #include <iostream>
-#include "SelectionSort.h"
+#include "SortAlogrithms.h"
 #include "SortTestHelper.h"
 
 using namespace std;
 
-void insertionSort(int arr[], int n) {
-    for (int i = 0; i < n; i++) {
-        for (int j = i; j < 0; j--) {
-            if (arr[i] < arr[j - 1])
-                swap(arr[i], arr[j - 1]);
-            else
-                break;
-        }
-    }
-    return;
-}
-
 int main() {
 
     int n = 10000;
-    int* arr_1 = SortTestHelper::generateRandomArray(n, 0, n);
+    int* arr_1 = SortTestHelper::generateNearlyOrderArray(n, 100);
+    int* arr_2 = SortTestHelper::copyIntArray(arr_1, n);
+    int* arr_3 = SortTestHelper::copyIntArray(arr_1, n);
 
-    SortTestHelper::testSort("Selection Sort", SelectionSort::selectionSort, arr_1, n);
+    SortTestHelper::testSort("Selection Sort", SortAlogrithms::selectionSort, arr_1, n);
 
+    SortTestHelper::testSort("Insertion Sort Plus", SortAlogrithms::insertionSortPlus, arr_2, n);
+
+    SortTestHelper::testSort("Bubble Sort", SortAlogrithms::bubbleSort, arr_3, n);
 
     delete[] arr_1;
+    delete[] arr_2;
+    delete[] arr_3;
     return 0;
 }

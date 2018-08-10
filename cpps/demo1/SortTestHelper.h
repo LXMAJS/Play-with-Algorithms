@@ -19,14 +19,14 @@ namespace SortTestHelper {
     //
     // return a array with n items, which range from rangeL to rangeR
     //
-    int* generateRandomArray(int n, int rangeL, int rangeR) {
+    int * generateRandomArray(int n, int rangeL, int rangeR) {
 
         assert(rangeL <= rangeR);
 
         int * arr = new int[n];
 
         // init time clock
-        srand( time(NULL));
+        srand(time(NULL));
         for (int i = 0; i < n; i++) {
             arr[i] = rand() % (rangeR - rangeL + 1) + rangeL;
         }
@@ -39,12 +39,11 @@ namespace SortTestHelper {
     // if a array is sorted
     //
     template <typename T>
-    bool isSorted(T * arr, int n){
+    bool isSorted(T arr[], int n){
 
-        for (int i = 0; i < n - 1; i++) {
-            if(arr[i] > arr[i + 1])
+        for (int i = 0; i < n - 1; i++)
+            if (arr[i] > arr[i + 1])
                 return false;
-        }
 
         return true;
     }
@@ -54,11 +53,10 @@ namespace SortTestHelper {
     // print an array
     //
     template <typename T>
-    void printArray(T * arr, int n){
+    void printArray(T arr[], int n){
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++)
             cout << arr[i] << " ";
-        }
         cout << endl;
     }
 
@@ -67,7 +65,7 @@ namespace SortTestHelper {
     // test sort alog
     //
     template <typename T>
-    void testSort(string sortName, void(*sort(T arr[], int n)), T arr[], int n){
+    void testSort(const string &sortName, void(*sort)(T[], int), T arr[], int n){
 
         // count times when sorting
         clock_t  startTime = clock();
@@ -79,6 +77,41 @@ namespace SortTestHelper {
         cout << sortName << " : " << double(endTime - startTime) / CLOCKS_PER_SEC << " s" << endl;
 
         return;
+    }
+
+
+    //
+    // copy an int array
+    //
+    int * copyIntArray(int * sourceArray, int n){
+        int * copyArray = new int [n];
+
+        copy(sourceArray, sourceArray + n, copyArray);
+
+        return copyArray;
+    }
+
+    //
+    // init an array with nearly order items
+    //
+    int * generateNearlyOrderArray(int n, int swapTimes) {
+
+        int * arr = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = i;
+        }
+        
+        srand(time(NULL));
+
+        for (int j = 0; j < swapTimes; ++j) {
+
+            int posX = rand()%n;
+            int posY = rand()%n;
+            swap(arr[posX], arr[posY]);
+        }
+
+        return arr;
     }
 }
 

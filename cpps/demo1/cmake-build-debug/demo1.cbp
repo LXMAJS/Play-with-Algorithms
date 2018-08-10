@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/SelectionSort.h">
+		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/SortAlogrithms.h">
 			<Option target="demo1"/>
 		</Unit>
 		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/SortTestHelper.h">
