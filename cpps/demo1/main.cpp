@@ -13,11 +13,12 @@ int main() {
 
     //SortTestHelper::testSort("Selection Sort", SortAlogrithms::selectionSort, arr_1, n);
 
-    SortTestHelper::testSort("Insertion Sort", SortAlogrithms::insertionSort, arr_2, n);
+    //SortTestHelper::testSort("Insertion Sort", SortAlogrithms::insertionSort, arr_2, n);
 
     //SortTestHelper::testSort("Bubble Sort", SortAlogrithms::bubbleSort, arr_3, n);
 
-    SortTestHelper::testSort("Merge Sort", SortAlogrithms::mergeSort, arr_1, n);
+    SortTestHelper::testSort("Merge Sort BU", SortAlogrithms::mergeSortBottomUp, arr_1, n);
+    SortTestHelper::testSort("Merge Sort IN", SortAlogrithms::mergeSort, arr_2, n);
     //SortTestHelper::printArray(arr_1, n);
 
     delete[] arr_1;

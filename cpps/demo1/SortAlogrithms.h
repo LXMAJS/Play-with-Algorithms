@@ -142,6 +142,23 @@ namespace SortAlogrithms {
     void mergeSort(T arr[], int n){
         __mergeSort(arr, 0, n-1);
     }
+
+    // merge sort from bottom to up
+    template <typename T>
+    void mergeSortBottomUp(T arr[], int n){
+
+        for (int size = 1; size <= n; size++) {
+            for (int index = 0; index < n - size; index += (size * 2)) {
+
+                if (size <= 15) {
+                    insertionSortPlus(arr, index, index + size * 2 - 1);
+                } else if (arr[index + size - 1] > arr[index + size]) {
+                    // merge array between arr[index, index + size -1] and arr[index + size, index + size * 2 -1]
+                    __mergeArray(arr, index, index + size - 1, min(index + size * 2 - 1, n - 1));
+                }
+            }
+        }
+    }
 }
 
 #endif //DEMO1_SORTALOGRITHMS_H
