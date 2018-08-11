@@ -65,6 +65,7 @@ namespace SortAlogrithms {
             arr[j] = tempValue;
         }
     }
+
     // bubble sort
     template <typename T>
     void bubbleSort(T arr[], int n){
@@ -78,9 +79,13 @@ namespace SortAlogrithms {
     }
 
 
+    /*
+     * ---------------------------------------------------------------------------------------------------------------
+     * merge sort
+     * ---------------------------------------------------------------------------------------------------------------
+     */
 
-
-
+    //
     template <typename T>
     void __mergeArray(T arr[], int leftPos, int middlePos, int rightPos) {
         int n = rightPos - leftPos + 1;
@@ -158,6 +163,101 @@ namespace SortAlogrithms {
                 }
             }
         }
+    }
+
+
+    /*
+     * ---------------------------------------------------------------------------------------------------------------
+     * quick sort
+     * ---------------------------------------------------------------------------------------------------------------
+     */
+
+    //
+    template <typename T>
+    int __partition(T arr[], int leftPos, int rightPos){
+
+        swap(arr[leftPos], arr[rand()%(rightPos - leftPos + 1) + leftPos]);
+        T tempValue = arr[leftPos];
+
+        // arr[leftPos + 1, partition] < tempValue,  arr[partition + 1, index) >= tempValue
+
+        int partition = leftPos;
+        for (int index = leftPos + 1; index <= rightPos; index ++) {
+            if(arr[index] < tempValue){
+                swap(arr[partition + 1], arr[index]);
+                partition++;
+            }
+        }
+
+        swap(arr[leftPos], arr[partition]);
+        return partition;
+    }
+
+
+    // sort arr[leftPos, rightPos]
+    template <typename T>
+    void __quickSort(T arr[], int leftPos, int rightPos){
+
+        if(leftPos >= rightPos)
+            return;
+
+        int partitionIndex = __partition(arr, leftPos, rightPos);
+        __quickSort(arr, leftPos, partitionIndex -1);
+        __quickSort(arr, partitionIndex + 1, rightPos);
+    }
+
+
+    template <typename T>
+    void quickSort(T arr[], int n){
+
+        srand(time(NULL));
+        __quickSort(arr, 0, n -1);
+    }
+
+
+
+    template <typename T>
+    int __partitionDoubleRoute(T arr[], int leftPos, int rightPos){
+
+        // random switch left item
+        swap(arr[leftPos], arr[rand()%(rightPos - leftPos + 1) + leftPos]);
+
+        T tempValue = arr[leftPos];
+
+        // arr[leftPos + 1, flagLeft) <= tempValue, arr(flagRight, rightPos] >= tempValue
+        int flagLeft = leftPos + 1, flagRight = rightPos;
+        while(true){
+            while(flagLeft <= rightPos && arr[flagLeft] >= tempValue) flagLeft ++;
+            while(flagRight >= leftPos + 1 && arr[flagRight] <= tempValue) flagRight --;
+
+            if(flagLeft > flagRight) break;
+
+            swap(arr[flagLeft], arr[flagRight]);
+            flagLeft ++;
+            flagRight --;
+        }
+
+        swap(arr[leftPos], arr[flagRight]);
+
+        return flagRight;
+    }
+
+    template <typename T>
+    void __quickSortDoubleRoute(T arr[], int leftPos, int rightPos){
+
+        if(leftPos >= rightPos)
+            return;
+
+        int partition = __partitionDoubleRoute(arr, leftPos, rightPos);
+        __quickSortDoubleRoute(arr, leftPos, partition - 1);
+        __quickSortDoubleRoute(arr, partition + 1, rightPos);
+    }
+
+
+    template <typename T>
+    void quickSortDoubleRoute(T arr[], int n){
+        srand(time(NULL));
+        __quickSortDoubleRoute(arr, 0, n-1);
     }
 }
 

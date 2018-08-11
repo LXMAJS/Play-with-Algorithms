@@ -6,8 +6,8 @@ using namespace std;
 
 int main() {
 
-    int n = 50000;
-    int* arr_1 = SortTestHelper::generateNearlyOrderArray(n, 0);
+    int n = 1000000;
+    int* arr_1 = SortTestHelper::generateNearlyOrderArray(n, 100);
     int* arr_2 = SortTestHelper::copyIntArray(arr_1, n);
     //int* arr_3 = SortTestHelper::copyIntArray(arr_1, n);
 
@@ -17,8 +17,10 @@ int main() {
 
     //SortTestHelper::testSort("Bubble Sort", SortAlogrithms::bubbleSort, arr_3, n);
 
-    SortTestHelper::testSort("Merge Sort BU", SortAlogrithms::mergeSortBottomUp, arr_1, n);
-    SortTestHelper::testSort("Merge Sort IN", SortAlogrithms::mergeSort, arr_2, n);
+    SortTestHelper::testSort("Quick Sort", SortAlogrithms::quickSort, arr_1, n);
+    SortTestHelper::testSort("Quick Sort DoubleROute", SortAlogrithms::quickSortDoubleRoute, arr_2, n);
+
+    //SortTestHelper::testSort("Quick Sort", SortAlogrithms::quickSort, arr_2, n);
     //SortTestHelper::printArray(arr_1, n);
 
     delete[] arr_1;
