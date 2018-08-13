@@ -50,13 +50,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="1135" />
-          <entry key="h" value="7058" />
+          <entry key="cpp" value="1160" />
+          <entry key="h" value="7799" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="8193" />
+          <entry key="ObjectiveC" value="8959" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -81,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="66" lean-forward="true" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
+            <state relative-caret-position="120">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -93,8 +93,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SortAlogrithms.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="174" column="6" selection-start-line="174" selection-start-column="6" selection-end-line="174" selection-end-column="6" />
+            <state relative-caret-position="225">
+              <caret line="269" column="19" selection-start-line="269" selection-start-column="19" selection-end-line="269" selection-end-column="19" />
               <folding>
                 <element signature="e#204#216#0" expanded="true" />
                 <element signature="e#176#521#0" />
@@ -119,9 +119,15 @@
                 <element signature="e#4896#4908#0" expanded="true" />
                 <element signature="e#5441#5894#0" />
                 <element signature="e#4905#4917#0" expanded="true" />
+                <element signature="e#5068#5167#0" />
                 <element signature="e#5918#5930#0" expanded="true" />
+                <element signature="e#5909#6014#0" />
                 <element signature="e#5918#5930#0" expanded="true" />
+                <element signature="e#5950#6064#0" />
                 <element signature="e#5923#5935#0" expanded="true" />
+                <element signature="e#5914#5997#0" />
+                <element signature="e#8176#8188#0" expanded="true" />
+                <element signature="e#8528#8540#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -230,12 +236,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533802930876</updated>
-      <workItem from="1533802933362" duration="17176000" />
+      <workItem from="1533802933362" duration="19317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17176000" />
+    <option name="totallyTimeSpent" value="19317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -295,8 +301,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="66" lean-forward="true" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
+        <state relative-caret-position="120">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -305,8 +311,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SortAlogrithms.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="174" column="6" selection-start-line="174" selection-start-column="6" selection-end-line="174" selection-end-column="6" />
+        <state relative-caret-position="225">
+          <caret line="269" column="19" selection-start-line="269" selection-start-column="19" selection-end-line="269" selection-end-column="19" />
           <folding>
             <element signature="e#204#216#0" expanded="true" />
             <element signature="e#176#521#0" />
@@ -331,9 +337,15 @@
             <element signature="e#4896#4908#0" expanded="true" />
             <element signature="e#5441#5894#0" />
             <element signature="e#4905#4917#0" expanded="true" />
+            <element signature="e#5068#5167#0" />
             <element signature="e#5918#5930#0" expanded="true" />
+            <element signature="e#5909#6014#0" />
             <element signature="e#5918#5930#0" expanded="true" />
+            <element signature="e#5950#6064#0" />
             <element signature="e#5923#5935#0" expanded="true" />
+            <element signature="e#5914#5997#0" />
+            <element signature="e#8176#8188#0" expanded="true" />
+            <element signature="e#8528#8540#0" expanded="true" />
           </folding>
         </state>
       </provider>

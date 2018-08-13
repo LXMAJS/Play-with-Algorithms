@@ -259,6 +259,56 @@ namespace SortAlogrithms {
         srand(time(NULL));
         __quickSortDoubleRoute(arr, 0, n-1);
     }
+
+
+    //--------
+
+    template <typename T>
+    void __quickSortTribleRoute(T arr[], int leftPos, int rightPos){
+
+        if(leftPos >= rightPos)
+            return;
+
+        // partition
+        swap(arr[leftPos], arr[rand()%(rightPos - leftPos + 1) + leftPos]);
+
+        T tempValue = arr[leftPos];
+
+        int flagLeft = leftPos; // arr[leftPos + 1, flagLeft] < tempValue
+        int flagRight = rightPos; // arr[flagRight, rightPos] > tempValue
+        int index = leftPos + 1; // arr[flagLeft + 1, index) == tempValue
+
+        while (index > rightPos){
+
+            if(arr[index] < tempValue){
+                swap(arr[index], arr[flagLeft + 1]);
+                flagLeft ++;
+                index ++;
+            }
+            else if(arr[index] > tempValue){
+                swap(arr[index], arr[flagRight]);
+                flagRight --;
+            }
+            else{
+                index ++;
+            }
+        }
+
+        swap(arr[leftPos], arr[flagLeft]);
+
+        __quickSortTribleRoute(arr, leftPos, flagLeft - 1);
+        __quickSortTribleRoute(arr, flagRight, rightPos);
+
+        return;
+    }
+
+
+    template <typename T>
+    void quickSortTribleRoute(T arr[], int n){
+
+        srand(time(NULL));
+        __quickSortTribleRoute(arr, 0, n-1);
+    }
 }
 
 #endif //DEMO1_SORTALOGRITHMS_H
