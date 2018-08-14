@@ -42,6 +42,12 @@ int main() {
     for( int i = 0 ; i < 50 ; i ++ )
         maxheap.insert( rand()%100 );
 
-    maxheap.printAllItems();
+
+    cout << "Max Heap's Items: " << endl;
+    while( !maxheap.isEmpty() ) {
+        cout << maxheap.extractMaxItem() << " ";
+    }
+    cout << endl;
+
     return 0;
 }

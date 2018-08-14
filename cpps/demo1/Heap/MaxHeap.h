@@ -30,6 +30,25 @@ namespace MaxHeap{
                 k /= 2;
             }
         }
+
+        ///
+        void shiftDown(int k){
+
+            int leftChild = k*2;
+            while( leftChild <= count ){ // if has child
+
+                // choose the max child
+                int maxChild = data[k*2] > data[k*2 + 1] ? k*2 : k*2 + 1;
+
+                if(data[k] >= data[maxChild]) break;
+
+                swap(data[maxChild], data[k]);
+
+                k = maxChild;
+            }
+        }
+
+
     public:
         ///
         MaxHeap(int capacity){
@@ -63,6 +82,19 @@ namespace MaxHeap{
             data[count + 1] = newItem;
             count ++;
             shiftUp(count);
+        }
+
+
+        Item extractMaxItem(){
+            assert( count > 0);
+
+            Item res = data[1];
+
+            swap(data[count], data[1]);
+            count --;
+            shiftDown(1);
+
+            return res;
         }
 
 
