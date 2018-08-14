@@ -58,6 +58,22 @@ namespace MaxHeap{
         }
 
         ///
+        MaxHeap(Item arr[], int n){
+
+            data = new Item[n + 1];
+            capacity = n;
+
+            for (int index = 0; index < n; ++index) {
+                data[index + 1] = arr[index];
+            }
+            count = n;
+
+            for (int i = count / 2; i >= 1; i--) {
+                shiftDown(i);
+            }
+        }
+
+        ///
         ~MaxHeap(){
             delete [] data;
             count = 0;
