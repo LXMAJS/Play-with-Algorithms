@@ -6,15 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/lijin/Documents/github/issues/cpps/demo1/Questions.h
+/Users/lijin/Documents/github/issues/cpps/demo1/Heap/MaxHeap.h
 iostream
 -
 
-/Users/lijin/Documents/github/issues/cpps/demo1/SortAlogrithms.h
+/Users/lijin/Documents/github/issues/cpps/demo1/Sort-Alogrithms/Questions.h
 iostream
 -
 
-/Users/lijin/Documents/github/issues/cpps/demo1/SortTestHelper.h
+/Users/lijin/Documents/github/issues/cpps/demo1/Sort-Alogrithms/SortAlogrithms.h
+iostream
+-
+
+/Users/lijin/Documents/github/issues/cpps/demo1/Sort-Alogrithms/SortTestHelper.h
 iostream
 -
 ctime
@@ -29,10 +33,12 @@ string
 /Users/lijin/Documents/github/issues/cpps/demo1/main.cpp
 iostream
 -
-SortAlogrithms.h
-/Users/lijin/Documents/github/issues/cpps/demo1/SortAlogrithms.h
-SortTestHelper.h
-/Users/lijin/Documents/github/issues/cpps/demo1/SortTestHelper.h
-Questions.h
-/Users/lijin/Documents/github/issues/cpps/demo1/Questions.h
+Sort-Alogrithms/SortAlogrithms.h
+/Users/lijin/Documents/github/issues/cpps/demo1/Sort-Alogrithms/SortAlogrithms.h
+Sort-Alogrithms/SortTestHelper.h
+/Users/lijin/Documents/github/issues/cpps/demo1/Sort-Alogrithms/SortTestHelper.h
+Sort-Alogrithms/Questions.h
+/Users/lijin/Documents/github/issues/cpps/demo1/Sort-Alogrithms/Questions.h
+Heap/MaxHeap.h
+/Users/lijin/Documents/github/issues/cpps/demo1/Heap/MaxHeap.h
 

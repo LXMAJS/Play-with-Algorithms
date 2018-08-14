@@ -82,13 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/Questions.h">
+		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/Heap/MaxHeap.h">
 			<Option target="demo1"/>
 		</Unit>
-		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/SortAlogrithms.h">
+		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/Sort-Alogrithms/Questions.h">
 			<Option target="demo1"/>
 		</Unit>
-		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/SortTestHelper.h">
+		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/Sort-Alogrithms/SortAlogrithms.h">
+			<Option target="demo1"/>
+		</Unit>
+		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/Sort-Alogrithms/SortTestHelper.h">
 			<Option target="demo1"/>
 		</Unit>
 		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/main.cpp">
