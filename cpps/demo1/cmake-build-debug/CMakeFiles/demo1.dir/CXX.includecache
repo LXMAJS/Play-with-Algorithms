@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/lijin/Documents/github/issues/cpps/demo1/Questions.h
+iostream
+-
+
 /Users/lijin/Documents/github/issues/cpps/demo1/SortAlogrithms.h
 iostream
 -
@@ -29,4 +33,6 @@ SortAlogrithms.h
 /Users/lijin/Documents/github/issues/cpps/demo1/SortAlogrithms.h
 SortTestHelper.h
 /Users/lijin/Documents/github/issues/cpps/demo1/SortTestHelper.h
+Questions.h
+/Users/lijin/Documents/github/issues/cpps/demo1/Questions.h
 
