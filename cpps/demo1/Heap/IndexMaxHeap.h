@@ -19,6 +19,8 @@ namespace IndexMaxHeap{
     private:
         Item * data;
         int * indexes;
+        int * reverse;
+
         int count;
         int capacity;
 
@@ -28,6 +30,8 @@ namespace IndexMaxHeap{
             // if parent is little then child, swich two item's value
             while( k > 1 && data[indexes[k/2]] < data[indexes[k]] ){
                 swap( indexes[k/2] , indexes[k] );
+                reverse[indexes[k/2]] = k/2;
+                reverse[index[k]] = k;
                 k /= 2;
             }
         }
@@ -43,7 +47,9 @@ namespace IndexMaxHeap{
 
                 if(data[k] >= data[maxChild]) break;
 
-                swap(data[maxChild], data[k]);
+                swap(indexes[maxChild], indexes[k]);
+                reverse[indexes[maxChild]] = maxChild;
+                reverse[indexes[k]] = k;
 
                 k = maxChild;
             }
@@ -55,6 +61,12 @@ namespace IndexMaxHeap{
         MaxHeap(int capacity){
             data = new Item[capacity + 1]; // root item's index is 1(one), not 0(zero);
             indexes = new int[capacity + 1];
+            reverse = new int[capacity + 1];
+            // all reverse' item value is 0, means does't exist
+            for (int i = 0; i <= capacity; i++) {
+                reverse[i] = 0;
+            }
+
             count = 0;
             this->capacity = capacity;
         }
@@ -63,6 +75,7 @@ namespace IndexMaxHeap{
         ~MaxHeap(){
             delete [] data;
             delete [] indexes;
+            delete [] reverse;
             count = 0;
             capacity = 0;
         }
@@ -81,13 +94,14 @@ namespace IndexMaxHeap{
         /// \param newItem
         void insert( int i, Item newItem ){
 
-
             assert( count + 1 <= capacity );
             assert( i >= 0 && i + 1 <= capacity);
 
             i ++; // make sure that index started with 1(one)
 
             indexes[count + 1] = i;
+            reverse[i] = count + 1;
+
             data[i] = newItem;
             count ++;
             shiftUp(count);
@@ -100,6 +114,8 @@ namespace IndexMaxHeap{
             Item res = data[indexes[1]];
 
             swap(indexes[count], indexes[1]);
+            reverse[indexes[count]] = 0;
+
             count --;
             shiftDown(1);
 
@@ -113,6 +129,8 @@ namespace IndexMaxHeap{
             int res = indexes[1] -1; // makesure that return index start witb 0(zero)
 
             swap(indexes[count], indexes[1]);
+            reverse[indexes[count]] = 0;
+
             count --;
             shiftDown(1);
 
@@ -126,7 +144,7 @@ namespace IndexMaxHeap{
         }
 
 
-        /// change i th item's value
+        /// change i th item's valueg
         void change(int i, Item newItem){
 
             assert(i >= 0 && i + 1 <= capacity);
@@ -134,14 +152,20 @@ namespace IndexMaxHeap{
 
             data[i] = newItem;
 
-            // heapify indexes
-            for (int j = 1; j <= count; j ++) {
-                if(indexes[j] == i){
-                    shiftDown(j);
-                    shiftUp(j);
-                    return;
-                }
-            }
+//            // heapify indexes
+//            for (int j = 1; j <= count; j ++) {
+//                if(indexes[j] == i){
+//                    shiftDown(j);
+//                    shiftUp(j);
+//                    return;
+//                }
+//            }
+
+            int index = reverse[i];
+            shiftUp(index);
+            shiftDown(index);
+
+            return;
         }
     };
 }
