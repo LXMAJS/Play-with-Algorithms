@@ -4,6 +4,7 @@
 #include "Sort-Alogrithms/Questions.h"
 
 #include "Heap/MaxHeap.h"
+#include "Heap/HeapSort.h"
 
 using namespace std;
 
@@ -36,6 +37,7 @@ int main() {
      */
 
 
+    /*
     MaxHeap::MaxHeap<int> maxheap = MaxHeap::MaxHeap<int>(100);
 
     srand(time(NULL));
@@ -48,6 +50,14 @@ int main() {
         cout << maxheap.extractMaxItem() << " ";
     }
     cout << endl;
+    */
 
+
+    int n = 10000;
+    int* arr_1 = SortTestHelper::generateRandomArray(n, 0, n);
+
+    SortTestHelper::testSort("Quick Sort", HeapSort::heapSort, arr_1, n);
+
+    delete [] arr_1;
     return 0;
 }

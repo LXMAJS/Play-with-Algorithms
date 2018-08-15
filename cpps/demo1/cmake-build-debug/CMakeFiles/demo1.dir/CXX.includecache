@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/lijin/Documents/github/issues/cpps/demo1/Heap/HeapSort.h
+iostream
+-
+
 /Users/lijin/Documents/github/issues/cpps/demo1/Heap/MaxHeap.h
 iostream
 -
@@ -41,4 +45,6 @@ Sort-Alogrithms/Questions.h
 /Users/lijin/Documents/github/issues/cpps/demo1/Sort-Alogrithms/Questions.h
 Heap/MaxHeap.h
 /Users/lijin/Documents/github/issues/cpps/demo1/Heap/MaxHeap.h
+Heap/HeapSort.h
+/Users/lijin/Documents/github/issues/cpps/demo1/Heap/HeapSort.h
 

@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/Heap/HeapSort.h">
+			<Option target="demo1"/>
+		</Unit>
 		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/Heap/MaxHeap.h">
 			<Option target="demo1"/>
 		</Unit>
