@@ -6,6 +6,9 @@
 #include "Heap/MaxHeap.h"
 #include "Heap/HeapSort.h"
 
+#include "Practice/Sum.h"
+#include "Practice/Repetition.h"
+
 using namespace std;
 
 int main() {
@@ -53,11 +56,20 @@ int main() {
     */
 
 
-    int n = 10000;
-    int* arr_1 = SortTestHelper::generateRandomArray(n, 0, n);
+//    int n = 10000;
+//    int* arr_1 = SortTestHelper::generateRandomArray(n, 0, n);
+//
+//    SortTestHelper::testSort("Quick Sort", HeapSort::heapSort, arr_1, n);
+//
+//    delete [] arr_1;
 
-    SortTestHelper::testSort("Quick Sort", HeapSort::heapSort, arr_1, n);
+    int arr[] = {0,0,1,1,1,2,2,3,3,4};
 
-    delete [] arr_1;
+    int res = Practice_Repetition::deleteRepeatItem(arr, 10);
+
+    for (int i = 0; i < res; ++i) {
+        cout << arr[i] << " ";
+    }
+
     return 0;
 }

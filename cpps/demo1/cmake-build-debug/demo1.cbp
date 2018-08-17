@@ -91,6 +91,12 @@
 		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/Heap/MaxHeap.h">
 			<Option target="demo1"/>
 		</Unit>
+		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/Practice/Repetition.h">
+			<Option target="demo1"/>
+		</Unit>
+		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/Practice/Sum.h">
+			<Option target="demo1"/>
+		</Unit>
 		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/Sort-Alogrithms/Questions.h">
 			<Option target="demo1"/>
 		</Unit>
