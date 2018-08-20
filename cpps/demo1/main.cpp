@@ -63,13 +63,16 @@ int main() {
 //
 //    delete [] arr_1;
 
-    int arr[] = {0,0,1,1,1,2,2,3,3,4};
+//    int arr[] = {0,0,1,1,1,2,2,3,3,4};
+//
+//    int res = Practice_Repetition::deleteRepeatItem(arr, 10);
+//
+//    for (int i = 0; i < res; ++i) {
+//        cout << arr[i] << " ";
+//    }
 
-    int res = Practice_Repetition::deleteRepeatItem(arr, 10);
+    //Practice_Sum::ListNode* n1 = new Practice_Sum::ListNode(2);
 
-    for (int i = 0; i < res; ++i) {
-        cout << arr[i] << " ";
-    }
-
+    cout << "finished!"<<endl;
     return 0;
 }
