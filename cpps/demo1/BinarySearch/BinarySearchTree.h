@@ -70,9 +70,40 @@ namespace BinarySearchTree{
             return root == NULL;
         }
 
-        /// insert a new item
+//        /// insert a new item, use interation
+//        void insert(Key k, Value val){
+//            root = insert(root, k, val);
+//        }
+
+        /// insert a new item, without interation
         void insert(Key k, Value val){
-            root = insert(root, k, val);
+            Node node = root;
+            
+            if(node == NULL){
+                node = new Node(k, val);
+                return;
+            }
+
+            while(node != NULL){
+                if(node.key == k){
+                    node.value = val;
+                }
+                else if(node.key < k){
+                    if(node.left == NULL){
+                        node.left = new Node(k, val);
+                        break;
+                    }
+                    node = node.left;
+                }
+                else{
+                    // node.key > k
+                    if(node.right == NULL){
+                        node.right = new Node(k, val);
+                        break;
+                    }
+                    node = node.right;
+                }
+            }
         }
     };
 }
