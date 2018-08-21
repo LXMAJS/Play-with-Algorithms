@@ -47,13 +47,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cpp" value="1716" />
-          <entry key="h" value="16368" />
+          <entry key="h" value="17107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Doxygen file" value="8" />
-          <entry key="ObjectiveC" value="18076" />
+          <entry key="Doxygen file" value="10" />
+          <entry key="ObjectiveC" value="18813" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -128,13 +128,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BinarySearch/BinarySearchTree.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="132" column="11" selection-start-line="132" selection-start-column="11" selection-end-line="132" selection-end-column="11" />
+            <state relative-caret-position="299">
+              <caret line="180" column="9" lean-forward="true" selection-start-line="180" selection-start-column="9" selection-end-line="180" selection-end-column="9" />
               <folding>
                 <element signature="e#190#220#0" expanded="true" />
+                <element signature="e#244#279#1" />
+                <element signature="e#647#676#0" />
+                <element signature="e#761#796#0" />
+                <element signature="e#826#864#0" />
                 <element signature="e#931#1058#0" />
+                <element signature="e#2022#2065#0" />
+                <element signature="e#2146#2197#0" />
                 <element signature="e#1984#2484#0" />
-                <marker date="1534820364031" expanded="false" signature="1068:2011" ph="..." />
+                <element signature="e#2677#2731#0" />
+                <element signature="e#3138#3206#0" />
+                <element signature="e#3562#3699#0" />
+                <element signature="e#3888#4099#0" />
+                <element signature="e#4202#4268#0" />
+                <element signature="e#4522#4571#0" />
+                <marker date="1534821627736" expanded="false" signature="1074:2017" ph="..." />
               </folding>
             </state>
           </provider>
@@ -270,12 +282,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533802930876</updated>
-      <workItem from="1533802933362" duration="35539000" />
+      <workItem from="1533802933362" duration="36298000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35539000" />
+    <option name="totallyTimeSpent" value="36298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -457,13 +469,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BinarySearch/BinarySearchTree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="132" column="11" selection-start-line="132" selection-start-column="11" selection-end-line="132" selection-end-column="11" />
+        <state relative-caret-position="299">
+          <caret line="180" column="9" lean-forward="true" selection-start-line="180" selection-start-column="9" selection-end-line="180" selection-end-column="9" />
           <folding>
             <element signature="e#190#220#0" expanded="true" />
+            <element signature="e#244#279#1" />
+            <element signature="e#647#676#0" />
+            <element signature="e#761#796#0" />
+            <element signature="e#826#864#0" />
             <element signature="e#931#1058#0" />
+            <element signature="e#2022#2065#0" />
+            <element signature="e#2146#2197#0" />
             <element signature="e#1984#2484#0" />
-            <marker date="1534820364031" expanded="false" signature="1068:2011" ph="..." />
+            <element signature="e#2677#2731#0" />
+            <element signature="e#3138#3206#0" />
+            <element signature="e#3562#3699#0" />
+            <element signature="e#3888#4099#0" />
+            <element signature="e#4202#4268#0" />
+            <element signature="e#4522#4571#0" />
+            <marker date="1534821627736" expanded="false" signature="1074:2017" ph="..." />
           </folding>
         </state>
       </provider>

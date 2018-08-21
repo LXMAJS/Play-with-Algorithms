@@ -38,7 +38,7 @@ namespace BinarySearchTree{
         }
 
         ~BST(){
-            // TODO:
+            destory(root);
         }
 
         /// size of bst
@@ -97,6 +97,25 @@ namespace BinarySearchTree{
             return search(root, k);
         }
 
+
+        /// pre order a bst
+        void preOrder(){
+            preOrder(root);
+            cout << endl;
+        }
+
+        /// middle order a bst
+        void inOrder(){
+            inOrder(root);
+            cout << endl;
+        }
+
+        /// post order a bst
+        void postOrder(){
+            postOrder(root);
+            cout << endl;
+        }
+
     private:
         /// insert a new item, private function
         Node insert(Node node, Key k, Value val){
@@ -143,6 +162,43 @@ namespace BinarySearchTree{
                 return search(node->right, k);
         }
 
+        ///
+        void preOrder(Node* node){
+            if(node != NULL) {
+                cout << node->value << "-";
+                preOrder(node->left);
+                preOrder(node->right);
+            }
+        }
+
+        ///
+        void inOrder(Node* node){
+            if(node != NULL) {
+                inOrder(node->left);
+                cout << node->value << "-";
+                inOrder(node->right);
+            }
+        }
+
+        ///
+        void postOrder(Node* node){
+            if(node != NULL){
+                postOrder(node->left);
+                postOrder(node->right);
+                cout << node->value << "-";
+            }
+        }
+
+        /// destory a node and release it's memory
+        void destory(Node * node){
+            if(node != NULL){
+                destory(node->left);
+                destory(node->right);
+
+                delete node;
+                count --;
+            }
+        }
     };
 }
 #endif //DEMO1_BINARYSEARCHTREE_H
