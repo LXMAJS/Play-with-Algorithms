@@ -178,6 +178,21 @@ namespace BinarySearchTree{
             return;
         }
 
+        /// find an item which nearly bigeger than k
+        Value* floor(Key k){
+            if(root != NULL){
+                return floor(root, k);
+            }
+            return NULL;
+        }
+
+        /// find an item which nearly smaller than k
+        Value* ceil(Key k){
+            if(root != NULL)
+                return ceil(root, k);
+            return NULL;
+        }
+
     private:
         /// insert a new item, private function
         Node insert(Node node, Key k, Value val){
@@ -302,6 +317,7 @@ namespace BinarySearchTree{
             return removeMax(node->right);
         }
 
+        ///
         Node* remove(Node* node, Key k){
             if(node == NULL)
                 return NULL;
@@ -351,6 +367,35 @@ namespace BinarySearchTree{
 
                 return successor;
             }
+        }
+
+        /// find an item from bst when it's key is eqaul or nearly litter to k
+        Value* floor(Node* node, Key k){
+            if(node == NULL)
+                return NULL;
+
+            if(node->key == k)
+                return &(node->value);
+
+            if(k < node->key && node->left != NULL)
+                return floor(node->left, k);
+            else // k > node->key or node->left == NULL
+                return node;
+        }
+
+
+        ///
+        Value* ceil(Node* node, Key k){
+            if(node == NULL)
+                return NULL;
+
+            if(node->key == k)
+                return &(node->value);
+
+            if(k > node->key && node->right != NULL)
+                return ceil(node->right, k);
+            else // k < node->key or node->right == NULL
+                return node;
         }
     };
 }
