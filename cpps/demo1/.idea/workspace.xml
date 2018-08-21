@@ -47,13 +47,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cpp" value="1716" />
-          <entry key="h" value="17107" />
+          <entry key="h" value="17424" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Doxygen file" value="10" />
-          <entry key="ObjectiveC" value="18813" />
+          <entry key="ObjectiveC" value="19130" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -128,9 +128,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BinarySearch/BinarySearchTree.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="180" column="9" lean-forward="true" selection-start-line="180" selection-start-column="9" selection-end-line="180" selection-end-column="9" />
+            <state relative-caret-position="229">
+              <caret line="121" column="26" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
               <folding>
+                <element signature="e#105#124#0" expanded="true" />
                 <element signature="e#190#220#0" expanded="true" />
                 <element signature="e#244#279#1" />
                 <element signature="e#647#676#0" />
@@ -146,7 +147,7 @@
                 <element signature="e#3888#4099#0" />
                 <element signature="e#4202#4268#0" />
                 <element signature="e#4522#4571#0" />
-                <marker date="1534821627736" expanded="false" signature="1074:2017" ph="..." />
+                <marker date="1534823233103" expanded="false" signature="1091:2034" ph="..." />
               </folding>
             </state>
           </provider>
@@ -282,12 +283,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533802930876</updated>
-      <workItem from="1533802933362" duration="36298000" />
+      <workItem from="1533802933362" duration="36704000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36298000" />
+    <option name="totallyTimeSpent" value="36704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -469,9 +470,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BinarySearch/BinarySearchTree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="180" column="9" lean-forward="true" selection-start-line="180" selection-start-column="9" selection-end-line="180" selection-end-column="9" />
+        <state relative-caret-position="229">
+          <caret line="121" column="26" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
           <folding>
+            <element signature="e#105#124#0" expanded="true" />
             <element signature="e#190#220#0" expanded="true" />
             <element signature="e#244#279#1" />
             <element signature="e#647#676#0" />
@@ -487,7 +489,7 @@
             <element signature="e#3888#4099#0" />
             <element signature="e#4202#4268#0" />
             <element signature="e#4522#4571#0" />
-            <marker date="1534821627736" expanded="false" signature="1074:2017" ph="..." />
+            <marker date="1534823233103" expanded="false" signature="1091:2034" ph="..." />
           </folding>
         </state>
       </provider>

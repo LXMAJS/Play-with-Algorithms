@@ -6,6 +6,7 @@
 #define DEMO1_BINARYSEARCHTREE_H
 
 #include <iostream>
+#include <queue>
 
 using namespace std;
 
@@ -116,6 +117,26 @@ namespace BinarySearchTree{
             cout << endl;
         }
 
+        ///
+        void levelOrder(Node* node){
+            queue<Node*> q;
+            q.push(root);
+
+            while(!q.empty()){
+
+                Node* node = q.front();
+                q.pop();
+
+                if(node != NULL)
+                    cout << node->key;
+
+                if(node->left) // node->left != NULL
+                    q.push(node->left);
+                if(node->right) // node->right != NULL
+                    q.push(node->right);
+            }
+        }
+
     private:
         /// insert a new item, private function
         Node insert(Node node, Key k, Value val){
@@ -199,6 +220,8 @@ namespace BinarySearchTree{
                 count --;
             }
         }
+
+
     };
 }
 #endif //DEMO1_BINARYSEARCHTREE_H
