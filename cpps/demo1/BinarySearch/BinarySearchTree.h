@@ -137,6 +137,32 @@ namespace BinarySearchTree{
             }
         }
 
+        ///
+        Key minimun(){
+            assert(count != 0);
+            Node* min = minimun(root);
+            return min->key;
+        }
+
+        ///
+        Key maximun(){
+            assert(count != 0);
+            Node* max = maximun(root);
+            return max->key;
+        }
+
+        /// remove the mix item from bst
+        void removeMin(){
+            if(root != NULL)
+                root = removeMin(root);
+        }
+
+        ///
+        void removeMax(){
+            if(root != NULL)
+                root = removeMax(root);
+        }
+
     private:
         /// insert a new item, private function
         Node insert(Node node, Key k, Value val){
@@ -221,7 +247,45 @@ namespace BinarySearchTree{
             }
         }
 
+        ///
+        Node* minimun(Node* node){
+            if(node->left != NULL)
+                return node;
 
+            return minimun(node->left);
+        }
+
+        ///
+        Node* maximun(Node* node){
+            if(node->right != NULL)
+                return node;
+
+            return maximun(node->right);
+        }
+
+        ///
+        Node* removeMin(Node* node){
+            if(node->left == NULL){
+                Node* rightNode = node->right;
+                delete node;
+                count --;
+                return rightNode;
+            }
+
+            return removeMin(node->left);
+        }
+
+        ///
+        Node* removeMax(Node* node){
+            if(node->right == NULL){
+                Node* leftNode = node->left;
+                delete node;
+                count--;
+                return leftNode;
+            }
+
+            return removeMax(node->right);
+        }
     };
 }
 #endif //DEMO1_BINARYSEARCHTREE_H
