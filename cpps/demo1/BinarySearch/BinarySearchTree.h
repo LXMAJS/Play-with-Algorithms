@@ -26,6 +26,13 @@ namespace BinarySearchTree{
                 this->value = val;
                 this->left = this->right = NULL;
             }
+
+            Node(Node* node){
+                this->key = node->key;
+                this->value = node->value;
+                this->left = node->left;
+                this->right = node->right;
+            }
         };
 
         Node * root; // root node
@@ -163,6 +170,14 @@ namespace BinarySearchTree{
                 root = removeMax(root);
         }
 
+        /// remove any item from bst when key equals to k
+        void remove(Key k){
+            if(root != NULL) {
+                root = remove(root, k);
+            }
+            return;
+        }
+
     private:
         /// insert a new item, private function
         Node insert(Node node, Key k, Value val){
@@ -285,6 +300,57 @@ namespace BinarySearchTree{
             }
 
             return removeMax(node->right);
+        }
+
+        Node* remove(Node* node, Key k){
+            if(node == NULL)
+                return NULL;
+
+            if(k < node->key){
+                node->left =  remove(node->left, k);
+                return node;
+            }
+            else if(k > node->key){
+                node->right = remove(node->right, k);
+                return node;
+            }
+            else{
+                // node->key == k
+
+                // node->left == NULL || (node->left == NULL && node->right == NULL)
+                if(node->left == NULL){
+                    Node* rightNode = node->right;
+                    delete node;
+                    count --;
+                    return right;
+                }
+
+                // node->left != NULL && node->right == NULL
+                if(node->right == NULL){
+                    Node* leftNode = node->left;
+                    delete node;
+                    count --;
+                    return leftNode;
+                }
+
+                // node->left != NULL && node->right != NULL
+
+                Node* successor = new Node(minimun(node->right)); // renew an item, the min item will be delete then.
+                count ++; // when new an item, count should be add 1;
+
+                successor->right = removeMin(node->right); // delete the min item, let successor's right child become the new child tree
+                successor->left = node->left;
+
+//                // another way
+//                successor = new Node(maximun(node->left));
+//                successor->left = removeMax(node->left);
+//                successor->right = node->right;
+
+                delete node;
+                count --;
+
+                return successor;
+            }
         }
     };
 }
