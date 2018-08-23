@@ -51,26 +51,31 @@ namespace Practice_Sum {
         ListNode(int x) : val(x), next(NULL) {}
     };
 
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        if(l1 == NULL && l2 == NULL)
-            return NULL;
+    ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode p = l1;
+        ListNode q = l2;
+        ListNode result = new ListNode(0);
+        ListNode temp = result;
+        int bonus = 0;
+        int sum = 0;
 
-        int sum = (l1 != NULL ? l1->val : 0) + (l2 != NULL ? l2->val : 0);
+        while(p != NULL || q != NULL){
+            sum = (p != NULL ? p->val : 0) + (q != NULL ? q->val : 0) + bonus;
+            temp.next = new ListNode(sum % 10);
+            temp = temp.next;
 
-        ListNode* node = new ListNode(sum % 10);
-        node->next = new ListNode(0);
-        if(sum >= 10){
-            if(l1 != NULL && l1->next != NULL) {
-                l1->next->val += 10;
-            }
-            else if(l2 != NULL && l2->next != NULL){
-                l2->next->val += 10;
-            }
+            if(sum > 10)
+                bonus = 1;
+
+            if(p != NULL) p = p.next;
+            if(q != NULL) q = q.next;
         }
-        if(l1 != NULL && l2 != NULL && (l1->next != NULL || l2->next != NULL)) {
-            node->next = addTwoNumbers(l1->next, l2->next);
-        }
-        return node;
+
+
+        if(bonus > 0)
+            temp.next = new ListNode(bonus);
+
+        return result.next;
     }
 
 };
