@@ -23,6 +23,8 @@ iostream
 /Users/lijin/Documents/github/issues/cpps/demo1/Practice/Sum.h
 iostream
 -
+cstring
+-
 ../BinarySearch/BinarySearch.h
 /Users/lijin/Documents/github/issues/cpps/demo1/BinarySearch/BinarySearch.h
 ../Sort-Alogrithms/SortAlogrithms.h
