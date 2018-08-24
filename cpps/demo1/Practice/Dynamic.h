@@ -19,7 +19,7 @@ namespace Dynamic{
      * 1、 n-1 + 1
      * 2、 n-2 + 2
      *
-     * 因此，n哥台阶的走法，就有 climbStairs(n-1) + climbStairs(n-2) 种
+     * 因此，n个台阶的走法，就有 climbStairs(n-1) + climbStairs(n-2) 种
      */
 
     int climbStairs(int n){
