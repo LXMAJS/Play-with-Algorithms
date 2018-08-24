@@ -8,6 +8,7 @@
 
 #include "Practice/Sum.h"
 #include "Practice/Repetition.h"
+#include "Practice/Dynamic.h"
 
 using namespace std;
 
@@ -39,7 +40,6 @@ int main() {
 //    //delete[] arr_3;
      */
 
-
     /*
     MaxHeap::MaxHeap<int> maxheap = MaxHeap::MaxHeap<int>(100);
 
@@ -55,7 +55,7 @@ int main() {
     cout << endl;
     */
 
-
+    /*
 //    int n = 10000;
 //    int* arr_1 = SortTestHelper::generateRandomArray(n, 0, n);
 //
@@ -72,6 +72,14 @@ int main() {
 //    }
 
     //Practice_Sum::ListNode* n1 = new Practice_Sum::ListNode(2);
+    */
+
+    int n = 20;
+    int* arr_1 = SortTestHelper::generateRandomArray(n, 1, n);
+
+    for (int index = 0; index < n; ++index) {
+        cout << arr_1[index] << " : " <<Dynamic::climbStairs(arr_1[index]) << endl;
+    }
 
     cout << "finished!"<<endl;
     return 0;

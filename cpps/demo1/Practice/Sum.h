@@ -7,8 +7,6 @@
 
 #include <iostream>
 #include <cstring>
-#include "../BinarySearch/BinarySearch.h"
-#include "../Sort-Alogrithms/SortAlogrithms.h"
 
 using namespace  std;
 
@@ -19,7 +17,7 @@ namespace Practice_Sum {
         int* res = new int[2];
 
         // 首先使用快速排序将整个数组排序
-        SortAlogrithms::quickSortTribleRoute(arr, n);
+        // SortAlogrithms::quickSortTribleRoute(arr, n);
 
         for (int index = 0; index < n; index ++) {
             int targetNum = target - arr[index];
@@ -45,39 +43,41 @@ namespace Practice_Sum {
      * 输出：7 -> 0 -> 8
      * 原因：342 + 465 = 807
      */
-    struct ListNode {
-        int val;
-        ListNode *next;
-
-        ListNode(int x) : val(x), next(NULL) {}
-    };
-
-    ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode p = l1;
-        ListNode q = l2;
-        ListNode result = new ListNode(0);
-        ListNode temp = result;
-        int bonus = 0;
-        int sum = 0;
-
-        while(p != NULL || q != NULL){
-            sum = (p != NULL ? p->val : 0) + (q != NULL ? q->val : 0) + bonus;
-            temp.next = new ListNode(sum % 10);
-            temp = temp.next;
-
-            if(sum > 10)
-                bonus = 1;
-
-            if(p != NULL) p = p.next;
-            if(q != NULL) q = q.next;
-        }
-
-
-        if(bonus > 0)
-            temp.next = new ListNode(bonus);
-
-        return result.next;
-    }
+    /*
+//    struct ListNode {
+//        int val;
+//        ListNode *next;
+//
+//        ListNode(int x) : val(x), next(NULL) {}
+//    };
+//
+//    ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+//        ListNode p = l1;
+//        ListNode q = l2;
+//        ListNode result = new ListNode(0);
+//        ListNode temp = result;
+//        int bonus = 0;
+//        int sum = 0;
+//
+//        while(p != NULL || q != NULL){
+//            sum = (p != NULL ? p->val : 0) + (q != NULL ? q->val : 0) + bonus;
+//            temp.next = new ListNode(sum % 10);
+//            temp = temp.next;
+//
+//            if(sum > 10)
+//                bonus = 1;
+//
+//            if(p != NULL) p = p.next;
+//            if(q != NULL) q = q.next;
+//        }
+//
+//
+//        if(bonus > 0)
+//            temp.next = new ListNode(bonus);
+//
+//        return result.next;
+//    }
+     */
 
 
     /*
@@ -93,14 +93,15 @@ namespace Practice_Sum {
      * 输出: 1
      * 解释: 无重复字符的最长子串是 "b"，其长度为 1。
      */
-    int noRepeatStringLength(string str){
-        int maxLenght = 0;
+    int lengthOfLongestSubstring(string str){
+        int a = 0, b = 0, index = 1;
+        int strLen = str.size();
 
-        for (int index = 0; index < strlen(str); index ++) {
+        for (; index < strLen; index ++) {
             
         }
 
-        return maxLenght;
+        return 0;
     }
 };
 

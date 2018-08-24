@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/lijin/Documents/github/issues/cpps/demo1/BinarySearch/BinarySearch.h
-iostream
--
-
 /Users/lijin/Documents/github/issues/cpps/demo1/Heap/HeapSort.h
 iostream
 -
 
 /Users/lijin/Documents/github/issues/cpps/demo1/Heap/MaxHeap.h
+iostream
+-
+
+/Users/lijin/Documents/github/issues/cpps/demo1/Practice/Dynamic.h
 iostream
 -
 
@@ -25,10 +25,6 @@ iostream
 -
 cstring
 -
-../BinarySearch/BinarySearch.h
-/Users/lijin/Documents/github/issues/cpps/demo1/BinarySearch/BinarySearch.h
-../Sort-Alogrithms/SortAlogrithms.h
-/Users/lijin/Documents/github/issues/cpps/demo1/Sort-Alogrithms/SortAlogrithms.h
 
 /Users/lijin/Documents/github/issues/cpps/demo1/Sort-Alogrithms/Questions.h
 iostream
@@ -67,4 +63,6 @@ Practice/Sum.h
 /Users/lijin/Documents/github/issues/cpps/demo1/Practice/Sum.h
 Practice/Repetition.h
 /Users/lijin/Documents/github/issues/cpps/demo1/Practice/Repetition.h
+Practice/Dynamic.h
+/Users/lijin/Documents/github/issues/cpps/demo1/Practice/Dynamic.h
 
