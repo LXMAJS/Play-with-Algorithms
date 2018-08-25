@@ -26,6 +26,12 @@ iostream
 cstring
 -
 
+/Users/lijin/Documents/github/issues/cpps/demo1/Practice/Tree.h
+iostream
+-
+queue
+-
+
 /Users/lijin/Documents/github/issues/cpps/demo1/Sort-Alogrithms/Questions.h
 iostream
 -
@@ -65,4 +71,6 @@ Practice/Repetition.h
 /Users/lijin/Documents/github/issues/cpps/demo1/Practice/Repetition.h
 Practice/Dynamic.h
 /Users/lijin/Documents/github/issues/cpps/demo1/Practice/Dynamic.h
+Practice/Tree.h
+/Users/lijin/Documents/github/issues/cpps/demo1/Practice/Tree.h
 

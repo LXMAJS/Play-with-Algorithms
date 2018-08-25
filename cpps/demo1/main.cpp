@@ -9,6 +9,7 @@
 #include "Practice/Sum.h"
 #include "Practice/Repetition.h"
 #include "Practice/Dynamic.h"
+#include "Practice/Tree.h"
 
 using namespace std;
 
@@ -74,12 +75,26 @@ int main() {
     //Practice_Sum::ListNode* n1 = new Practice_Sum::ListNode(2);
     */
 
-    int n = 20;
-    int* arr_1 = SortTestHelper::generateRandomArray(n, 1, n);
+//    int n = 20;
+//    int* arr_1 = SortTestHelper::generateRandomArray(n, 1, n);
+//
+//    for (int index = 0; index < n; ++index) {
+//        cout << arr_1[index] << " : " <<Dynamic::climbStairs(arr_1[index]) << endl;
+//    }
 
-    for (int index = 0; index < n; ++index) {
-        cout << arr_1[index] << " : " <<Dynamic::climbStairs(arr_1[index]) << endl;
-    }
+    Tree::TreeNode* n1 = new Tree::TreeNode(1);
+    Tree::TreeNode* n3 = new Tree::TreeNode(3);
+    Tree::TreeNode* n4 = new Tree::TreeNode(4);
+    Tree::TreeNode* n5 = new Tree::TreeNode(5);
+    Tree::TreeNode* n6 = new Tree::TreeNode(6);
+
+    n4->left = n3;
+    n4->right = n6;
+
+    n5->left = n1;
+    n5->right = n4;
+
+    bool t = Tree::isValidBST(n5);
 
     cout << "finished!"<<endl;
     return 0;
