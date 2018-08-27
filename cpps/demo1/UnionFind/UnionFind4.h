@@ -2,20 +2,20 @@
 // Created by 黎进 on 2018/8/27.
 //
 
-#ifndef DEMO1_UNIONFIND3_H
-#define DEMO1_UNIONFIND3_H
+#ifndef DEMO1_UNIONFIND4_H
+#define DEMO1_UNIONFIND4_H
 #include <iostream>
 #include <cassert>
 
 using namespace std;
 
-namespace UF3 {
+namespace UF4 {
 
     class UnionFind {
 
     private:
         int* parent;
-        int* sz;
+        int* rank;
         int count;
 
     public:
@@ -23,11 +23,11 @@ namespace UF3 {
         UnionFind(int n) {
             count = n;
             parent = new int[n];
-            sz = new int[n];
+            rank = new int[n];
 
             for (int i = 0; i < n; i++) {
                 parent[i] = i;
-                sz[i] = 1;
+                rank[i] = 1;
             }
         }
 
@@ -35,7 +35,7 @@ namespace UF3 {
         ~UnionFind() {
             count = 0;
             delete[] parent;
-            delete[] sz;
+            delete[] rank;
         }
 
         ///
@@ -68,16 +68,19 @@ namespace UF3 {
 
             if (pRoot == qRoot)
                 return;
-            if(sz[pRoot] < sz[qRoot]) {
+
+            if(rank[pRoot] < rank[qRoot]) {
                 parent[pRoot] = qRoot;
-                sz[qRoot] += sz[pRoot];
             }
-            else{
+            else if(rank[qRoot] < rank[pRoot]){
                 parent[qRoot] = pRoot;
-                sz[pRoot] += sz[qRoot];
+            }
+            else{ // rank[qRoot] == rank[pRoot]
+                parent[pRoot] = qRoot;
+                rank[qRoot] += 1;
             }
             return;
         }
     };
 }
-#endif //DEMO1_UNIONFIND3_H
+#endif //DEMO1_UNIONFIND4_H
