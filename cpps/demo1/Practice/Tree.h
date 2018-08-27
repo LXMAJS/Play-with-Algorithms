@@ -28,7 +28,6 @@ namespace Tree{
         TreeNode(int x) : val(x), left(NULL), right(NULL) {}
     };
 
-
     int maxDepth(TreeNode * root) {
         if(root == NULL)
             return 0;
