@@ -58,6 +58,12 @@ iostream
 cassert
 -
 
+/Users/lijin/Documents/github/issues/cpps/demo1/UnionFind/UnionFind2.h
+iostream
+-
+cassert
+-
+
 /Users/lijin/Documents/github/issues/cpps/demo1/UnionFind/UnionFindTestHelper.h
 iostream
 -
@@ -65,6 +71,8 @@ cassert
 -
 UnionFind1.h
 /Users/lijin/Documents/github/issues/cpps/demo1/UnionFind/UnionFind1.h
+UnionFind2.h
+/Users/lijin/Documents/github/issues/cpps/demo1/UnionFind/UnionFind2.h
 
 /Users/lijin/Documents/github/issues/cpps/demo1/main.cpp
 iostream

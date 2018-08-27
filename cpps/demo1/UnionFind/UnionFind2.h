@@ -2,73 +2,72 @@
 // Created by 黎进 on 2018/8/27.
 //
 
-#ifndef DEMO1_UNIONFIND1_H
-#define DEMO1_UNIONFIND1_H
-
+#ifndef DEMO1_UNIONFIND2_H
+#define DEMO1_UNIONFIND2_H
 #include <iostream>
 #include <cassert>
 
 using namespace std;
 
-namespace UF1 {
+namespace UF2 {
 
     class UnionFind {
 
     private:
-        int *id;
+        int *parent;
         int count;
 
     public:
-        ///
-        /// \param n
+        /// construction
         UnionFind(int n) {
             count = n;
-            id = new int [n];
+            parent = new int[n];
 
             for (int i = 0; i < n; i++) {
-                id[i] = i;
+                parent[i] = i;
             }
         }
 
         ///
-        ~UnionFind(){
+        ~UnionFind() {
             count = 0;
-            delete [] id;
+            delete[] parent;
         }
 
-        /// find id
+        ///
         /// \param p
         /// \return
-        int find(int p){
+        int find(int p) {
             assert(p >= 0 && p < count);
-            return id[p];
+
+            while (p != parent[p]) {
+                p = parent[p];
+            }
+
+            return p;
         }
 
         ///
         /// \param p
         /// \param q
         /// \return
-        bool isConnected(int p, int q){
+        bool isConnected(int p, int q) {
             return find(p) == find(q);
         }
 
         ///
         /// \param p
         /// \param q
-        void unionElements(int p, int q){
-            int pId = find(p);
-            int qId = find(q);
+        void unionElements(int p, int q) {
+            int pRoot = find(p);
+            int qRoot = find(q);
 
-            if(pId == qId)
+            if (pRoot == qRoot)
                 return;
 
-            for (int i = 0; i < count; i++) {
-                if(id[i] == pId)
-                    id[i] = qId;
-            }
+            parent[pRoot] = qRoot;
+            return;
         }
-
     };
 }
-
-#endif //DEMO1_UNIONFIND1_H
+#endif //DEMO1_UNIONFIND2_H
