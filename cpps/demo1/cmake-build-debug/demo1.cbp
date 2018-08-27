@@ -121,6 +121,9 @@
 		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/UnionFind/UnionFind1.h">
 			<Option target="demo1"/>
 		</Unit>
+		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/UnionFind/UnionFindTestHelper.h">
+			<Option target="demo1"/>
+		</Unit>
 		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/main.cpp">
 			<Option target="demo1"/>
 		</Unit>

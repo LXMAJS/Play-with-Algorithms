@@ -11,6 +11,8 @@
 #include "Practice/Dynamic.h"
 #include "Practice/Tree.h"
 
+#include "UnionFind/UnionFindTestHelper.h"
+
 using namespace std;
 
 int main() {
@@ -81,20 +83,23 @@ int main() {
 //    for (int index = 0; index < n; ++index) {
 //        cout << arr_1[index] << " : " <<Dynamic::climbStairs(arr_1[index]) << endl;
 //    }
+//
+//    Tree::TreeNode* n1 = new Tree::TreeNode(1);
+//    Tree::TreeNode* n3 = new Tree::TreeNode(3);
+//    Tree::TreeNode* n4 = new Tree::TreeNode(4);
+//    Tree::TreeNode* n5 = new Tree::TreeNode(5);
+//    Tree::TreeNode* n6 = new Tree::TreeNode(6);
+//
+//    n4->left = n3;
+//    n4->right = n6;
+//
+//    n5->left = n1;
+//    n5->right = n4;
+//
+//    bool t = Tree::isValidBST(n5);
 
-    Tree::TreeNode* n1 = new Tree::TreeNode(1);
-    Tree::TreeNode* n3 = new Tree::TreeNode(3);
-    Tree::TreeNode* n4 = new Tree::TreeNode(4);
-    Tree::TreeNode* n5 = new Tree::TreeNode(5);
-    Tree::TreeNode* n6 = new Tree::TreeNode(6);
-
-    n4->left = n3;
-    n4->right = n6;
-
-    n5->left = n1;
-    n5->right = n4;
-
-    bool t = Tree::isValidBST(n5);
+    int n = 10000;
+    UnionFindTestHelper::testUF1(n);
 
     cout << "finished!"<<endl;
     return 0;
