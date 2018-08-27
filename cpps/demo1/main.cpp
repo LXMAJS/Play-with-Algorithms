@@ -98,9 +98,10 @@ int main() {
 //
 //    bool t = Tree::isValidBST(n5);
 
-    int n = 100000;
+    int n = 1000000;
     UnionFindTestHelper::testUF3(n);
     UnionFindTestHelper::testUF4(n);
+    UnionFindTestHelper::testUF5(n);
 
     cout << "finished!"<<endl;
     return 0;

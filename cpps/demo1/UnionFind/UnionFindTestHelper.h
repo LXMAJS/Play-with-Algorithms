@@ -12,6 +12,7 @@
 #include "UnionFind2.h"
 #include "UnionFind3.h"
 #include "UnionFind4.h"
+#include "UnionFind5.h"
 
 using namespace std;
 
@@ -131,6 +132,35 @@ namespace UnionFindTestHelper {
 
         // 输出时间
         cout << "UF4: " << 2*n << " ops, " << double(endTime - startTime) / CLOCKS_PER_SEC << "s" << endl;
+    }
+
+    ///
+    /// \param n
+    void testUF5(int n){
+
+        srand(time(NULL));
+        UF5::UnionFind uf = UF5::UnionFind(n);
+
+        time_t startTime = clock();
+
+        // 随机的链接两个元素
+        for (int i = 0; i < n; i++) {
+            int a = rand()%n;
+            int b = rand()%n;
+            uf.unionElements(a, b);
+        }
+
+        // 两个元素是否连接
+        for (int j = 0; j < n; j++) {
+            int p = rand()%n;
+            int q = rand()%n;
+            uf.isConnected(p, q);
+        }
+
+        time_t endTime = clock();
+
+        // 输出时间
+        cout << "UF5: " << 2*n << " ops, " << double(endTime - startTime) / CLOCKS_PER_SEC << "s" << endl;
     }
 }
 
