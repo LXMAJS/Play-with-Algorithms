@@ -12,6 +12,7 @@ CMakeFiles/demo1.dir/main.cpp.o: ../Sort-Alogrithms/SortAlogrithms.h
 CMakeFiles/demo1.dir/main.cpp.o: ../Sort-Alogrithms/SortTestHelper.h
 CMakeFiles/demo1.dir/main.cpp.o: ../UnionFind/UnionFind1.h
 CMakeFiles/demo1.dir/main.cpp.o: ../UnionFind/UnionFind2.h
+CMakeFiles/demo1.dir/main.cpp.o: ../UnionFind/UnionFind3.h
 CMakeFiles/demo1.dir/main.cpp.o: ../UnionFind/UnionFindTestHelper.h
 CMakeFiles/demo1.dir/main.cpp.o: ../main.cpp
 
