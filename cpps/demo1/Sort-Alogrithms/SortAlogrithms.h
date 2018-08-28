@@ -30,7 +30,7 @@ namespace SortAlogrithms {
     // insertion sort
     template <typename T>
     void insertionSort(T arr[], int n){
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i < n; i++) {
             for( int j = i ; j > 0 && arr[j] < arr[j-1] ; j -- )
                 swap( arr[j] , arr[j-1] );
         }
@@ -39,7 +39,7 @@ namespace SortAlogrithms {
     // insertion sort plus
     template <typename T>
     void insertionSortPlus(T arr[], int n){
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i < n; i++) {
             T tempValue = arr[i];
             int j;
             for (j = i; j > 0 && tempValue < arr[j -1]; j--) {
@@ -193,7 +193,6 @@ namespace SortAlogrithms {
         return partition;
     }
 
-
     // sort arr[leftPos, rightPos]
     template <typename T>
     void __quickSort(T arr[], int leftPos, int rightPos){
@@ -206,15 +205,12 @@ namespace SortAlogrithms {
         __quickSort(arr, partitionIndex + 1, rightPos);
     }
 
-
     template <typename T>
     void quickSort(T arr[], int n){
 
         srand(time(NULL));
         __quickSort(arr, 0, n -1);
     }
-
-
 
     template <typename T>
     int __partitionDoubleRoute(T arr[], int leftPos, int rightPos){
@@ -252,7 +248,6 @@ namespace SortAlogrithms {
         __quickSortDoubleRoute(arr, leftPos, partition - 1);
         __quickSortDoubleRoute(arr, partition + 1, rightPos);
     }
-
 
     template <typename T>
     void quickSortDoubleRoute(T arr[], int n){
@@ -301,7 +296,6 @@ namespace SortAlogrithms {
 
         return;
     }
-
 
     template <typename T>
     void quickSortTribleRoute(T arr[], int n){

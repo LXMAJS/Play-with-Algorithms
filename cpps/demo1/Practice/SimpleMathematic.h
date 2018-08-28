@@ -19,5 +19,18 @@ namespace SimpleMathematic{
         a = a - b;
         return;
     }
+
+    /*
+     * 有一个N*N的矩阵，请拟写一个方法，将矩阵进行顺指针旋转90度
+     * 例如：[[1, 2], [3, 4]]，旋转后 [[3, 1], [4, 2]]
+     */
+    void rotate(vector<vector<int>>& matrix){
+        int size = matrix.size() - 1;
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                swap(matrix[i][j], matrix[j][size - i])；
+            }
+        }
+    }
 }
 #endif //DEMO1_SIMPLEMATHEMATIC_H

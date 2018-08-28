@@ -12,15 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd75e96c-d400-4033-adde-c4933181cf46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UnionFind/UnionFind5.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnionFind/UnionFindTestHelper.h" beforeDir="false" afterPath="$PROJECT_DIR$/UnionFind/UnionFindTestHelper.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/demo1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/demo1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice/SimpleMathematic.h" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/SimpleMathematic.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sort-Alogrithms/SortAlogrithms.h" beforeDir="false" afterPath="$PROJECT_DIR$/Sort-Alogrithms/SortAlogrithms.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,23 +48,23 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cpp" value="2035" />
-          <entry key="h" value="25125" />
+          <entry key="h" value="25369" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Doxygen file" value="32" />
-          <entry key="ObjectiveC" value="27128" />
+          <entry key="ObjectiveC" value="27372" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="h" value="23" />
+          <entry key="h" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="23" />
+          <entry key="ObjectiveC" value="26" />
         </counts>
       </usages-collector>
     </session>
@@ -148,11 +141,57 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UnionFind/UnionFind5.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
+            <state relative-caret-position="254">
               <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sort-Alogrithms/SortAlogrithms.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-372">
+              <caret line="223" column="21" selection-start-line="223" selection-start-column="21" selection-end-line="223" selection-end-column="21" />
+              <folding>
+                <element signature="e#204#216#0" expanded="true" />
+                <element signature="e#176#521#0" />
+                <element signature="e#527#772#0" />
+                <element signature="e#778#1122#0" />
+                <element signature="e#1128#1597#0" />
+                <element signature="e#1603#1887#0" />
+                <element signature="e#2166#3012#0" />
+                <element signature="e#3018#3813#0" />
+                <element signature="e#3862#3874#0" expanded="true" />
+                <element signature="e#3819#3950#0" />
+                <element signature="e#3956#4619#0" />
+                <element signature="e#4898#5516#0" />
+                <element signature="e#5523#5873#0" />
+                <element signature="e#5880#6006#0" />
+                <element signature="e#6834#7179#0" />
+                <element signature="e#7186#7332#0" />
+                <element signature="e#8454#8601#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Heap/MaxHeap.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-164">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Practice/SimpleMathematic.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -177,7 +216,6 @@
         <option value="$PROJECT_DIR$/BinarySearch/BinarySearchTree.h" />
         <option value="$PROJECT_DIR$/Practice/Sum.h" />
         <option value="$PROJECT_DIR$/Practice/Math.h" />
-        <option value="$PROJECT_DIR$/Practice/SimpleMathematic.h" />
         <option value="$PROJECT_DIR$/Practice/Tree.h" />
         <option value="$PROJECT_DIR$/Practice/Dynamic.h" />
         <option value="$PROJECT_DIR$/UnionFind/UnionFindTester.h" />
@@ -188,6 +226,8 @@
         <option value="$PROJECT_DIR$/UnionFind/UnionFindTestHelper.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/UnionFind/UnionFind5.h" />
+        <option value="$PROJECT_DIR$/Sort-Alogrithms/SortAlogrithms.h" />
+        <option value="$PROJECT_DIR$/Practice/SimpleMathematic.h" />
       </list>
     </option>
   </component>
@@ -220,7 +260,17 @@
             <path>
               <item name="demo1" type="b2602c69:ProjectViewProjectNode" />
               <item name="demo1" type="462c0819:PsiDirectoryNode" />
-              <item name="UnionFind" type="462c0819:PsiDirectoryNode" />
+              <item name="Heap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo1" type="462c0819:PsiDirectoryNode" />
+              <item name="Practice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo1" type="462c0819:PsiDirectoryNode" />
+              <item name="Sort-Alogrithms" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -279,19 +329,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533802930876</updated>
-      <workItem from="1533802933362" duration="54562000" />
+      <workItem from="1533802933362" duration="57625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54562000" />
+    <option name="totallyTimeSpent" value="57625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18526466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18526466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -301,7 +351,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29759037" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29759037" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -338,47 +388,6 @@
             <element signature="e#654#666#0" expanded="true" />
             <element signature="e#900#912#0" expanded="true" />
             <element signature="e#1122#1134#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sort-Alogrithms/SortAlogrithms.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="279" selection-start-line="279" selection-end-line="279" />
-          <folding>
-            <element signature="e#204#216#0" expanded="true" />
-            <element signature="e#176#521#0" />
-            <element signature="e#559#571#0" expanded="true" />
-            <element signature="e#506#558#0" />
-            <element signature="e#880#892#0" expanded="true" />
-            <element signature="e#871#951#0" />
-            <element signature="e#1137#1149#0" expanded="true" />
-            <element signature="e#1128#1228#0" />
-            <element signature="e#1225#1237#0" expanded="true" />
-            <element signature="e#1216#1289#0" />
-            <element signature="e#2043#2055#0" expanded="true" />
-            <element signature="e#1574#1936#0" />
-            <element signature="e#2923#2935#0" expanded="true" />
-            <element signature="e#1989#2076#0" />
-            <element signature="e#3723#3735#0" expanded="true" />
-            <element signature="e#2091#2164#0" />
-            <element signature="e#3862#3874#0" expanded="true" />
-            <element signature="e#3679#4372#0" />
-            <element signature="e#4906#4918#0" expanded="true" />
-            <element signature="e#4620#5264#0" />
-            <element signature="e#4896#4908#0" expanded="true" />
-            <element signature="e#5441#5894#0" />
-            <element signature="e#4905#4917#0" expanded="true" />
-            <element signature="e#5068#5167#0" />
-            <element signature="e#5918#5930#0" expanded="true" />
-            <element signature="e#5909#6014#0" />
-            <element signature="e#5918#5930#0" expanded="true" />
-            <element signature="e#5950#6064#0" />
-            <element signature="e#5923#5935#0" expanded="true" />
-            <element signature="e#5914#5997#0" />
-            <element signature="e#8176#8188#0" expanded="true" />
-            <element signature="e#8528#8540#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -434,16 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Heap/MaxHeap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-454">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="e#167#182#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Practice/Math.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
@@ -480,13 +479,6 @@
             <element signature="e#125#368#0" />
             <element signature="e#723#749#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Practice/SimpleMathematic.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -579,8 +571,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UnionFind/UnionFind5.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
+        <state relative-caret-position="254">
           <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sort-Alogrithms/SortAlogrithms.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-372">
+          <caret line="223" column="21" selection-start-line="223" selection-start-column="21" selection-end-line="223" selection-end-column="21" />
+          <folding>
+            <element signature="e#204#216#0" expanded="true" />
+            <element signature="e#176#521#0" />
+            <element signature="e#527#772#0" />
+            <element signature="e#778#1122#0" />
+            <element signature="e#1128#1597#0" />
+            <element signature="e#1603#1887#0" />
+            <element signature="e#2166#3012#0" />
+            <element signature="e#3018#3813#0" />
+            <element signature="e#3862#3874#0" expanded="true" />
+            <element signature="e#3819#3950#0" />
+            <element signature="e#3956#4619#0" />
+            <element signature="e#4898#5516#0" />
+            <element signature="e#5523#5873#0" />
+            <element signature="e#5880#6006#0" />
+            <element signature="e#6834#7179#0" />
+            <element signature="e#7186#7332#0" />
+            <element signature="e#8454#8601#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Heap/MaxHeap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-164">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/SimpleMathematic.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
         </state>
       </provider>
     </entry>
