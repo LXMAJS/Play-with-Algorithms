@@ -7,6 +7,8 @@
 
 
 #include <iostream>
+#include <stack>
+
 using namespace std;
 
 
@@ -31,6 +33,45 @@ namespace SimpleMathematic{
                 swap(matrix[i][j], matrix[j][size - i])；
             }
         }
+    }
+
+    /*
+     * 检查一个字符串的括号是否是成对出现的
+     */
+    bool isPair(char h, char t){
+        if((h == '{' && t == '}') || (h == '[' && t == ']') || (h == '(' && t == ')'))
+            return true;
+
+        return false;
+    }
+
+    bool check_pattern(char* expr){
+        if(expr == NULL)
+            return false;
+        char[] head = {'{', '[', '(' };
+        char[] tail = {'}', ']', ')' };
+
+        stack<char> s;
+        int i = 0;
+        while(expr[i] != '\0'){
+            char c = expr[i];
+            if(c == '{' || c == '[' || c == '('){
+                s.push(c);
+            }
+            else if(c == '}' || c == ']' || c == ')'){
+                char h = s.top();
+                s.pop();
+                if(!isPair(h, c))
+                    return false;
+            }
+            else
+                continue;
+        }
+
+        if(!s.empty())
+            return false;
+        else
+            return true;
     }
 }
 #endif //DEMO1_SIMPLEMATHEMATIC_H

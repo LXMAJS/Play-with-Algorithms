@@ -10,6 +10,7 @@
 #include "Practice/Repetition.h"
 #include "Practice/Dynamic.h"
 #include "Practice/Tree.h"
+#include "Practice/SimpleMathematic.h"
 
 #include "UnionFind/UnionFindTestHelper.h"
 
@@ -98,10 +99,14 @@ int main() {
 //
 //    bool t = Tree::isValidBST(n5);
 
-    int n = 1000000;
-    UnionFindTestHelper::testUF3(n);
-    UnionFindTestHelper::testUF4(n);
-    UnionFindTestHelper::testUF5(n);
+//    int n = 1000000;
+//    UnionFindTestHelper::testUF3(n);
+//    UnionFindTestHelper::testUF4(n);
+//    UnionFindTestHelper::testUF5(n);
+
+    string s = "sss{wwev[vrv]wervrv}wevrwrvwrv(wvrrv";
+    char[] cc = s.toCharArray();
+    cout << SimpleMathematic::check_pattern(cc) << endl;
 
     cout << "finished!"<<endl;
     return 0;
