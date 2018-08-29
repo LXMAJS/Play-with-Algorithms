@@ -5,6 +5,7 @@ CMakeFiles/demo1.dir/main.cpp.o: ../Heap/HeapSort.h
 CMakeFiles/demo1.dir/main.cpp.o: ../Heap/MaxHeap.h
 CMakeFiles/demo1.dir/main.cpp.o: ../Practice/Dynamic.h
 CMakeFiles/demo1.dir/main.cpp.o: ../Practice/Repetition.h
+CMakeFiles/demo1.dir/main.cpp.o: ../Practice/SimpleMathematic.h
 CMakeFiles/demo1.dir/main.cpp.o: ../Practice/Sum.h
 CMakeFiles/demo1.dir/main.cpp.o: ../Practice/Tree.h
 CMakeFiles/demo1.dir/main.cpp.o: ../Sort-Alogrithms/Questions.h

@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <stack>
+#include <queue>
 
 using namespace std;
 
@@ -30,7 +31,7 @@ namespace SimpleMathematic{
         int size = matrix.size() - 1;
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                swap(matrix[i][j], matrix[j][size - i])；
+                swap(matrix[i][j], matrix[j][size - i]);
             }
         }
     }
@@ -48,8 +49,8 @@ namespace SimpleMathematic{
     bool check_pattern(char* expr){
         if(expr == NULL)
             return false;
-        char[] head = {'{', '[', '(' };
-        char[] tail = {'}', ']', ')' };
+        char head[3] = {'{', '[', '(' };
+        char tail[3] = {'}', ']', ')' };
 
         stack<char> s;
         int i = 0;
@@ -72,6 +73,40 @@ namespace SimpleMathematic{
             return false;
         else
             return true;
+    }
+
+    /*
+     * 判断一个整数的二进制表达中，是否存在两个连续的1
+     */
+    bool check_bin(int n){
+        stack<int> s;
+        cout << n << " : ";
+        while(n > 1){
+            int r = n % 2;
+            s.push(r);
+            n /= 2;
+        }
+        if(n > 0)
+            s.push(n);
+
+        int flag = 0;
+        while(!s.empty()){
+            int c = s.top();
+            cout << c;
+            s.pop();
+
+            if(c == 1){
+                flag = flag + c;
+            }
+            else{
+                flag = 0;
+            }
+
+            if(flag > 1)
+                return true;
+        }
+
+        return false;
     }
 }
 #endif //DEMO1_SIMPLEMATHEMATIC_H

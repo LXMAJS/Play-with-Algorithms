@@ -104,9 +104,15 @@ int main() {
 //    UnionFindTestHelper::testUF4(n);
 //    UnionFindTestHelper::testUF5(n);
 
-    string s = "sss{wwev[vrv]wervrv}wevrwrvwrv(wvrrv";
-    char[] cc = s.toCharArray();
-    cout << SimpleMathematic::check_pattern(cc) << endl;
+//    string s = "sss{wwev[vrv]wervrv}wevrwrvwrv(wvrrv";
+//    char[] cc = s.toCharArray();
+//    cout << SimpleMathematic::check_pattern(cc) << endl;
+
+
+    int n = 6;
+    bool result = SimpleMathematic::check_bin(n);
+
+    cout << endl << result << endl;
 
     cout << "finished!"<<endl;
     return 0;

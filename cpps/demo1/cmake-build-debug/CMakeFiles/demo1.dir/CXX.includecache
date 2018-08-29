@@ -20,6 +20,14 @@ iostream
 
 /Users/lijin/Documents/github/issues/cpps/demo1/Practice/Repetition.h
 
+/Users/lijin/Documents/github/issues/cpps/demo1/Practice/SimpleMathematic.h
+iostream
+-
+stack
+-
+queue
+-
+
 /Users/lijin/Documents/github/issues/cpps/demo1/Practice/Sum.h
 iostream
 -
@@ -119,6 +127,8 @@ Practice/Dynamic.h
 /Users/lijin/Documents/github/issues/cpps/demo1/Practice/Dynamic.h
 Practice/Tree.h
 /Users/lijin/Documents/github/issues/cpps/demo1/Practice/Tree.h
+Practice/SimpleMathematic.h
+/Users/lijin/Documents/github/issues/cpps/demo1/Practice/SimpleMathematic.h
 UnionFind/UnionFindTestHelper.h
 /Users/lijin/Documents/github/issues/cpps/demo1/UnionFind/UnionFindTestHelper.h
 
