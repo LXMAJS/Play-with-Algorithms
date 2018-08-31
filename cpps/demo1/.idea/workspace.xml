@@ -12,9 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd75e96c-d400-4033-adde-c4933181cf46" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Practice/SimpleMathematic.h" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/SimpleMathematic.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graph/DenseGraph.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graph/SparseGraph.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/demo1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/demo1.cbp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,23 +51,23 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cpp" value="2247" />
-          <entry key="h" value="26464" />
+          <entry key="h" value="27699" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Doxygen file" value="32" />
-          <entry key="ObjectiveC" value="28679" />
+          <entry key="Doxygen file" value="37" />
+          <entry key="ObjectiveC" value="29909" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="h" value="26" />
+          <entry key="h" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="26" />
+          <entry key="ObjectiveC" value="29" />
         </counts>
       </usages-collector>
     </session>
@@ -93,50 +95,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sort-Alogrithms/SortAlogrithms.h">
+        <entry file="file://$PROJECT_DIR$/Graph/DenseGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-372">
-              <caret line="223" column="21" selection-start-line="223" selection-start-column="21" selection-end-line="223" selection-end-column="21" />
+            <state relative-caret-position="234">
+              <caret line="42" column="28" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="42" selection-end-column="28" />
               <folding>
-                <element signature="e#204#216#0" expanded="true" />
-                <element signature="e#176#521#0" />
-                <element signature="e#527#772#0" />
-                <element signature="e#778#1122#0" />
-                <element signature="e#1128#1597#0" />
-                <element signature="e#1603#1887#0" />
-                <element signature="e#2166#3012#0" />
-                <element signature="e#3018#3813#0" />
-                <element signature="e#3862#3874#0" expanded="true" />
-                <element signature="e#3819#3950#0" />
-                <element signature="e#3956#4619#0" />
-                <element signature="e#4898#5516#0" />
-                <element signature="e#5523#5873#0" />
-                <element signature="e#5880#6006#0" />
-                <element signature="e#6834#7179#0" />
-                <element signature="e#7186#7332#0" />
-                <element signature="e#8454#8601#0" />
+                <element signature="e#93#112#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Heap/MaxHeap.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-164">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Practice/SimpleMathematic.h">
+        <entry file="file://$PROJECT_DIR$/Graph/SparseGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="102" column="13" lean-forward="true" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+            <state relative-caret-position="130">
+              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
               <folding>
-                <element signature="e#106#125#0" expanded="true" />
-                <element signature="e#692#803#0" />
+                <element signature="e#95#114#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -174,6 +150,8 @@
         <option value="$PROJECT_DIR$/Sort-Alogrithms/SortAlogrithms.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Practice/SimpleMathematic.h" />
+        <option value="$PROJECT_DIR$/Graph/DenseGraph.h" />
+        <option value="$PROJECT_DIR$/Graph/SparseGraph.h" />
       </list>
     </option>
   </component>
@@ -206,17 +184,7 @@
             <path>
               <item name="demo1" type="b2602c69:ProjectViewProjectNode" />
               <item name="demo1" type="462c0819:PsiDirectoryNode" />
-              <item name="Heap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo1" type="462c0819:PsiDirectoryNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo1" type="462c0819:PsiDirectoryNode" />
-              <item name="Sort-Alogrithms" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -275,19 +243,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533802930876</updated>
-      <workItem from="1533802933362" duration="60611000" />
+      <workItem from="1533802933362" duration="62210000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60611000" />
+    <option name="totallyTimeSpent" value="62210000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18526466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18526466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -297,7 +265,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29759037" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29759037" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -542,6 +510,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/SimpleMathematic.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="102" column="13" lean-forward="true" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+          <folding>
+            <element signature="e#106#125#0" expanded="true" />
+            <element signature="e#692#803#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -555,13 +534,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Practice/SimpleMathematic.h">
+    <entry file="file://$PROJECT_DIR$/Graph/Graph.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph/DenseGraph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="102" column="13" lean-forward="true" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+        <state relative-caret-position="234">
+          <caret line="42" column="28" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="42" selection-end-column="28" />
           <folding>
-            <element signature="e#106#125#0" expanded="true" />
-            <element signature="e#692#803#0" />
+            <element signature="e#93#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph/SparseGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding>
+            <element signature="e#95#114#0" expanded="true" />
           </folding>
         </state>
       </provider>
