@@ -72,6 +72,45 @@ namespace DenseGraph{
             m++;
             return;
         }
+
+
+        /*
+         *
+         */
+        class adjIterator{
+        private:
+            DenseGraph &G;
+            int v; // current vertex
+            int index;
+
+        public:
+            adjIterator(DenseGraph graph, int v) : G(graph) {
+                this->v = v;
+                this->index = -1; // 数组的下标从0开始，因此初始值可设置为 -1;
+            }
+
+            ///
+            /// \return
+            int begin(){
+                index = -1;
+                return next(); // 将index设置为-1，然后返回第一个next即可
+            }
+
+            ///
+            /// \return
+            int next(){
+                index += 1;
+                for ( ; index < G.V() ; index++) {
+                    if(G.g[v][index])
+                        return index; // 返回值为true的图的index
+                }
+                return -1;
+            }
+
+            bool end(){
+                return index >= G.V();
+            }
+        };
     };
 }
 

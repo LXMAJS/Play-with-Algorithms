@@ -12,11 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd75e96c-d400-4033-adde-c4933181cf46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Graph/DenseGraph.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graph/SparseGraph.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/demo1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/demo1.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/DenseGraph.h" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/DenseGraph.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/SparseGraph.h" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/SparseGraph.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,13 +48,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cpp" value="2247" />
-          <entry key="h" value="27699" />
+          <entry key="h" value="28625" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Doxygen file" value="37" />
-          <entry key="ObjectiveC" value="29909" />
+          <entry key="Doxygen file" value="44" />
+          <entry key="ObjectiveC" value="30828" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -94,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Graph/DenseGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="42" column="28" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="42" selection-end-column="28" />
+            <state relative-caret-position="298">
+              <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
               <folding>
                 <element signature="e#93#112#0" expanded="true" />
               </folding>
@@ -106,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Graph/SparseGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+            <state relative-caret-position="707">
+              <caret line="112" column="46" selection-start-line="112" selection-start-column="46" selection-end-line="112" selection-end-column="46" />
               <folding>
                 <element signature="e#95#114#0" expanded="true" />
               </folding>
@@ -150,8 +147,8 @@
         <option value="$PROJECT_DIR$/Sort-Alogrithms/SortAlogrithms.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Practice/SimpleMathematic.h" />
-        <option value="$PROJECT_DIR$/Graph/DenseGraph.h" />
         <option value="$PROJECT_DIR$/Graph/SparseGraph.h" />
+        <option value="$PROJECT_DIR$/Graph/DenseGraph.h" />
       </list>
     </option>
   </component>
@@ -243,12 +240,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533802930876</updated>
-      <workItem from="1533802933362" duration="62210000" />
+      <workItem from="1533802933362" duration="63487000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62210000" />
+    <option name="totallyTimeSpent" value="63487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -521,6 +518,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Graph/Graph.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph/SparseGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="112" column="46" selection-start-line="112" selection-start-column="46" selection-end-line="112" selection-end-column="46" />
+          <folding>
+            <element signature="e#95#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -534,25 +544,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph/Graph.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Graph/DenseGraph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="42" column="28" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="42" selection-end-column="28" />
+        <state relative-caret-position="298">
+          <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
           <folding>
             <element signature="e#93#112#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Graph/SparseGraph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding>
-            <element signature="e#95#114#0" expanded="true" />
           </folding>
         </state>
       </provider>
