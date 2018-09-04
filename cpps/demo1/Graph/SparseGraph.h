@@ -10,110 +10,118 @@
 
 using namespace std;
 
-namespace SparseGraph {
+/*
+ * 稀疏图，邻接表
+ */
+class SparseGraph {
+private:
+    int n; // count of vertex
+    int m; // count of edge
+    bool directed; // if directed
+    vector<vector<int>> g; // graph
+
+public:
+    ///
+    /// \param n
+    /// \param directed
+    SparseGraph(int n, bool directed) {
+        this->n = n;
+        this->m = 0;
+        this->directed = directed;
+        g = vector<vector<int>>(n, vector<int>());
+    }
+
+    ~SparseGraph() {
+        // Do nothing
+    }
+
+    int V() { return n; }
+
+    int E() { return m; }
+
+    ///
+    /// \param v
+    /// \param w
+    /// \return
+    bool hasEdge(int v, int w) {
+        assert(v >= 0 && v <= n);
+        assert(w >= 0 && w <= n);
+
+        for (int i = 0; i < g[v].size(); i++) {
+            if (g[v][i] == w)
+                return true;
+        }
+        return false;
+    }
+
+    ///
+    /// \param v
+    /// \param w
+    void addEdge(int v, int w) {
+        assert(v >= 0 && v <= n);
+        assert(w >= 0 && w <= n);
+
+        g[v].push_back(w);
+        // 处理自环边ß
+        if (v != w && !directed) {
+            g[w].push_back(v);
+        }
+        m++;
+        return;
+    }
+
+    /// show an sparse graph
+    void show(){
+        for (int i = 0; i < V(); i++) {
+            cout<<"vertex "<<i<<":\t";
+            for (int j = 0; j < g[i].size(); j++) {
+                cout<<g[i][j]<<" ";
+            }
+            cout<<endl;
+        }
+    }
 
     /*
-     * advance list
+     * adjacent iterator
      */
-    class SparseGraph {
+    class adjIterator {
     private:
-        int n; // count of v
-        int m; // count of edge
-        bool directed; // if directed
-        vector<vector<int>> g; // graph
+        SparseGraph &G;
+        int v;
+        int index;
 
     public:
-        ///
-        /// \param n
-        /// \param directed
-        SparseGraph(int n, bool directed) {
-            this->n = n;
-            this->m = 0;
-            this->directed = directed;
-            g = vector<vector<int>>(n, vector<int>());
+        adjIterator(SparseGraph graph, int v) : G(graph) {
+            this->v = v;
+            this->index = 0;
         }
 
-        ~SparseGraph() {
-            // Do nothing
-        }
-
-        int V() { return n; }
-
-        int E() { return m; }
-
         ///
-        /// \param v
-        /// \param w
         /// \return
-        bool hasEdge(int v, int w) {
-            assert(v >= 0 && v <= n);
-            assert(w >= 0 && w <= n);
-
-            for (int i = 0; i < g[v].size(); i++) {
-                if (g[v][i] == w)
-                    return true;
+        int begin() {
+            index = 0;
+            if (G.g[v].size() > 0) {
+                return G.g[v][index];
             }
-            return false;
+            return -1;
         }
 
         ///
-        /// \param v
-        /// \param w
-        void addEdge(int v, int w) {
-            assert(v >= 0 && v <= n);
-            assert(w >= 0 && w <= n);
-
-            g[v].push_back(w);
-            // 处理自环边ß
-            if (v != w && !directed) {
-                g[w].push_back(v);
+        /// \return
+        int next(){
+            index ++;
+            if(index < G.g[v].size()){
+                return G.g[v][index];
             }
-            m++;
-            return;
+            return -1;
         }
 
-        /*
-         * adjacent iterator
-         */
-        class adjIterator {
-        private:
-            SparseGraph &G;
-            int v;
-            int index;
-
-        public:
-            adjIterator(SparseGraph graph, int v) : G(graph) {
-                this->v = v;
-                this->index = 0;
-            }
-
-            ///
-            /// \return
-            int begin() {
-                index = 0;
-                if (G.g[v].size() > 0) {
-                    return G.g[v][index];
-                }
-                return -1;
-            }
-
-            ///
-            /// \return
-            int next(){
-                index ++;
-                if(index < G.g[v].size()){
-                    return G.g[v][index];
-                }
-                return -1;
-            }
-
-            ///
-            /// \return
-            bool end(){
-                return index >= G.g[v].size();
-            }
-        };
+        ///
+        /// \return
+        bool end(){
+            return index >= G.g[v].size();
+        }
     };
-}
+};
 
 #endif //DEMO1_SPARSEGRAPH_H

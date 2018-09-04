@@ -6,6 +6,30 @@
 
 #IncludeRegexTransform: 
 
+/Users/lijin/Documents/github/issues/cpps/demo1/Graph/DenseGraph.h
+iostream
+-
+vector
+-
+
+/Users/lijin/Documents/github/issues/cpps/demo1/Graph/ReadGraph.h
+iostream
+-
+fstream
+-
+string
+-
+sstream
+-
+cassert
+-
+
+/Users/lijin/Documents/github/issues/cpps/demo1/Graph/SparseGraph.h
+iostream
+-
+vector
+-
+
 /Users/lijin/Documents/github/issues/cpps/demo1/Heap/HeapSort.h
 iostream
 -
@@ -131,4 +155,10 @@ Practice/SimpleMathematic.h
 /Users/lijin/Documents/github/issues/cpps/demo1/Practice/SimpleMathematic.h
 UnionFind/UnionFindTestHelper.h
 /Users/lijin/Documents/github/issues/cpps/demo1/UnionFind/UnionFindTestHelper.h
+Graph/SparseGraph.h
+/Users/lijin/Documents/github/issues/cpps/demo1/Graph/SparseGraph.h
+Graph/DenseGraph.h
+/Users/lijin/Documents/github/issues/cpps/demo1/Graph/DenseGraph.h
+Graph/ReadGraph.h
+/Users/lijin/Documents/github/issues/cpps/demo1/Graph/ReadGraph.h
 

@@ -14,6 +14,10 @@
 
 #include "UnionFind/UnionFindTestHelper.h"
 
+#include "Graph/SparseGraph.h"
+#include "Graph/DenseGraph.h"
+#include "Graph/ReadGraph.h"
+
 using namespace std;
 
 int main() {
@@ -78,6 +82,7 @@ int main() {
     //Practice_Sum::ListNode* n1 = new Practice_Sum::ListNode(2);
     */
 
+    /*
 //    int n = 20;
 //    int* arr_1 = SortTestHelper::generateRandomArray(n, 1, n);
 //
@@ -109,10 +114,39 @@ int main() {
 //    cout << SimpleMathematic::check_pattern(cc) << endl;
 
 
-    int n = 6;
-    bool result = SimpleMathematic::check_bin(n);
+//    int n = 6;
+//    bool result = SimpleMathematic::check_bin(n);
+//
+//    cout << endl << result << endl;
+*/
 
-    cout << endl << result << endl;
+    string filename = "../testG1.txt";
+    SparseGraph sg(13, false);
+    ReadGraph<SparseGraph> readGraph1(sg, filename);
+    cout<<"test G1 in Sparse Graph : "<<endl;
+    sg.show();
+
+    cout<<endl;
+
+    DenseGraph g2( 13 , false );
+    ReadGraph<DenseGraph> readGraph2( g2 , filename );
+    cout<<"test G1 in Dense Graph:" << endl;
+    g2.show();
+
+    // 使用两种图的存储方式读取testG2.txt文件
+    filename = "../testG2.txt";
+    SparseGraph g3( 6 , false );
+    ReadGraph<SparseGraph> readGraph3( g3 , filename );
+    cout<<"test G2 in Sparse Graph:" << endl;
+    g3.show();
+
+    cout<<endl;
+
+    DenseGraph g4( 6 , false );
+    ReadGraph<DenseGraph> readGraph4( g4 , filename );
+    cout<<"test G2 in Dense Graph:" << endl;
+    g4.show();
+
 
     cout << "finished!"<<endl;
     return 0;
