@@ -39,7 +39,7 @@ public:
 
         for (int i = 0; i < G.V(); ++i) {
             visited[i] = false;
-            id[i] = -1;gi
+            id[i] = -1;
         }
 
         /*
