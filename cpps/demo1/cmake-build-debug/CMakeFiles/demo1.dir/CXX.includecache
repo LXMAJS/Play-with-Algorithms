@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/lijin/Documents/github/issues/cpps/demo1/Graph/Component.h
+iostream
+-
+cassert
+-
+
 /Users/lijin/Documents/github/issues/cpps/demo1/Graph/DenseGraph.h
 iostream
 -
@@ -161,4 +167,6 @@ Graph/DenseGraph.h
 /Users/lijin/Documents/github/issues/cpps/demo1/Graph/DenseGraph.h
 Graph/ReadGraph.h
 /Users/lijin/Documents/github/issues/cpps/demo1/Graph/ReadGraph.h
+Graph/Component.h
+/Users/lijin/Documents/github/issues/cpps/demo1/Graph/Component.h
 

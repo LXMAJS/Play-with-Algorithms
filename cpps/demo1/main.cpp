@@ -17,6 +17,7 @@
 #include "Graph/SparseGraph.h"
 #include "Graph/DenseGraph.h"
 #include "Graph/ReadGraph.h"
+#include "Graph/Component.h"
 
 using namespace std;
 
@@ -120,6 +121,7 @@ int main() {
 //    cout << endl << result << endl;
 */
 
+    /*
     string filename = "../testG1.txt";
     SparseGraph sg(13, false);
     ReadGraph<SparseGraph> readGraph1(sg, filename);
@@ -146,7 +148,19 @@ int main() {
     ReadGraph<DenseGraph> readGraph4( g4 , filename );
     cout<<"test G2 in Dense Graph:" << endl;
     g4.show();
+    */
 
+    // TestG1.txt - g1 and g2
+    string filename1 = "../testG1.txt";
+    SparseGraph g1 = SparseGraph(13, false);
+    ReadGraph<SparseGraph> readGraph1(g1, filename1);
+    Component<SparseGraph> component1(g1);
+    cout<<"TestG1.txt, Using Sparse Graph, Component Count: "<<component1.count()<<endl;
+
+    DenseGraph g2 = DenseGraph(13, false);
+    ReadGraph<DenseGraph> readGraph2(g2, filename1);
+    Component<DenseGraph> component2(g2);
+    cout<<"TestG1.txt, Using Dense Graph, Component Count: "<<component2.count()<<endl;
 
     cout << "finished!"<<endl;
     return 0;
