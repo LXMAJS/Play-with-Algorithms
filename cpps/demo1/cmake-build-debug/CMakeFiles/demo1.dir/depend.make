@@ -3,6 +3,7 @@
 
 CMakeFiles/demo1.dir/main.cpp.o: ../Graph/Component.h
 CMakeFiles/demo1.dir/main.cpp.o: ../Graph/DenseGraph.h
+CMakeFiles/demo1.dir/main.cpp.o: ../Graph/Path.h
 CMakeFiles/demo1.dir/main.cpp.o: ../Graph/ReadGraph.h
 CMakeFiles/demo1.dir/main.cpp.o: ../Graph/SparseGraph.h
 CMakeFiles/demo1.dir/main.cpp.o: ../Heap/HeapSort.h

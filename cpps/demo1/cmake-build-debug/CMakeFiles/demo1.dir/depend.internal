@@ -4,6 +4,7 @@
 CMakeFiles/demo1.dir/main.cpp.o
  /Users/lijin/Documents/github/issues/cpps/demo1/Graph/Component.h
  /Users/lijin/Documents/github/issues/cpps/demo1/Graph/DenseGraph.h
+ /Users/lijin/Documents/github/issues/cpps/demo1/Graph/Path.h
  /Users/lijin/Documents/github/issues/cpps/demo1/Graph/ReadGraph.h
  /Users/lijin/Documents/github/issues/cpps/demo1/Graph/SparseGraph.h
  /Users/lijin/Documents/github/issues/cpps/demo1/Heap/HeapSort.h

@@ -18,6 +18,14 @@ iostream
 vector
 -
 
+/Users/lijin/Documents/github/issues/cpps/demo1/Graph/Path.h
+iostream
+-
+cassert
+-
+stack
+-
+
 /Users/lijin/Documents/github/issues/cpps/demo1/Graph/ReadGraph.h
 iostream
 -
@@ -169,4 +177,6 @@ Graph/ReadGraph.h
 /Users/lijin/Documents/github/issues/cpps/demo1/Graph/ReadGraph.h
 Graph/Component.h
 /Users/lijin/Documents/github/issues/cpps/demo1/Graph/Component.h
+Graph/Path.h
+/Users/lijin/Documents/github/issues/cpps/demo1/Graph/Path.h
 
