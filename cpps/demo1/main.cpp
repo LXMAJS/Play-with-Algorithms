@@ -19,6 +19,7 @@
 #include "Graph/ReadGraph.h"
 #include "Graph/Component.h"
 #include "Graph/Path.h"
+#include "Graph/ShortestPath.h"
 
 using namespace std;
 
@@ -152,15 +153,19 @@ int main() {
     */
 
     // TestG1.txt - g1 and g2
-    string filename = "../testG1.txt";
-    SparseGraph g = SparseGraph(13, false);
+    string filename = "../testG2.txt";
+    SparseGraph g = SparseGraph(7, false);
     ReadGraph<SparseGraph> readGraph1(g, filename);
     g.show();
     cout<<endl;
 
     Path<SparseGraph> dfs(g, 0);
     cout<<"DFS : ";
-    dfs.showPath(6);
+    dfs.showPath(3);
+
+    ShortestPath<SparseGraph> bfs(g, 0);
+    cout<<"BFS : ";
+    bfs.showPath(3);
 
     cout << "finished!"<<endl;
     return 0;

@@ -48,7 +48,7 @@ public:
             q.pop();
 
             typename Graph::adjIterator adj(G, v);
-            for (int i = adj.begin(); !adj.end() ; i = adj.next() {
+            for (int i = adj.begin(); !adj.end() ; i = adj.next()) {
                 if(!visited[i]){
                     q.push(i);
                     visited[i] = true;
