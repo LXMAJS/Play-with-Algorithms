@@ -24,4 +24,8 @@ CMakeFiles/demo1.dir/main.cpp.o
  /Users/lijin/Documents/github/issues/cpps/demo1/UnionFind/UnionFind4.h
  /Users/lijin/Documents/github/issues/cpps/demo1/UnionFind/UnionFind5.h
  /Users/lijin/Documents/github/issues/cpps/demo1/UnionFind/UnionFindTestHelper.h
+ /Users/lijin/Documents/github/issues/cpps/demo1/WeightGraph/DenseGraph.h
+ /Users/lijin/Documents/github/issues/cpps/demo1/WeightGraph/Edge.h
+ /Users/lijin/Documents/github/issues/cpps/demo1/WeightGraph/ReadGraph.h
+ /Users/lijin/Documents/github/issues/cpps/demo1/WeightGraph/SparseGraph.h
  /Users/lijin/Documents/github/issues/cpps/demo1/main.cpp

@@ -2,8 +2,8 @@
 // Created by 黎进 on 2018/8/31.
 //
 
-#ifndef DEMO1_DENSEGRAPH_H
-#define DEMO1_DENSEGRAPH_H
+#ifndef DEMO1_WEIGHTGRAPH_DENSEGRAPH_H
+#define DEMO1_WEIGHTGRAPH_DENSEGRAPH_H
 
 #include <iostream>
 #include <vector>
@@ -22,7 +22,7 @@ namespace WeightGraph {
         int n; // count of vectrix
         int m; // count of edge
         bool directed; // if directed
-        vector<vector<Edge<Weight> *> g; // graph
+        vector<vector<Edge<Weight> *>> g; // graph
 
     public:
         /// construction
@@ -39,7 +39,10 @@ namespace WeightGraph {
         }
 
         ~DenseGraph(){
-            // Do nothing
+            for( int i = 0 ; i < n ; i ++ )
+                for( int j = 0 ; j < n ; j ++ )
+                    if( g[i][j] != NULL )
+                        delete g[i][j];
         }
 
         int V(){ return n; }
@@ -70,9 +73,9 @@ namespace WeightGraph {
                     delete g[w][v];
             }
 
-            g[v][w] = new Edge(v, w, weight);
+            g[v][w] = new Edge<Weight>(v, w, weight);
             if(!directed){
-                g[w][v] = new Edge(w, v, weight);
+                g[w][v] = new Edge<Weight>(w, v, weight);
             }
             m++;
             return;
@@ -132,4 +135,4 @@ namespace WeightGraph {
     };
 }
 
-#endif //DEMO1_DENSEGRAPH_H
+#endif //DEMO1_WEIGHTGRAPH_DENSEGRAPH_H

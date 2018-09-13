@@ -1,4 +1,6 @@
 #include <iostream>
+#include <iomanip>
+
 #include "Sort-Alogrithms/SortAlogrithms.h"
 #include "Sort-Alogrithms/SortTestHelper.h"
 #include "Sort-Alogrithms/Questions.h"
@@ -20,6 +22,10 @@
 #include "Graph/Component.h"
 #include "Graph/Path.h"
 #include "Graph/ShortestPath.h"
+
+#include "WeightGraph/SparseGraph.h"
+#include "WeightGraph/DenseGraph.h"
+#include "WeightGraph/ReadGraph.h"
 
 using namespace std;
 
@@ -152,20 +158,35 @@ int main() {
     g4.show();
     */
 
-    // TestG1.txt - g1 and g2
-    string filename = "../testG2.txt";
-    SparseGraph g = SparseGraph(7, false);
-    ReadGraph<SparseGraph> readGraph1(g, filename);
-    g.show();
+    /*
+//    // TestG1.txt - g1 and g2
+//    string filename = "../testG2.txt";
+//    SparseGraph g = SparseGraph(7, false);
+//    ReadGraph<SparseGraph> readGraph1(g, filename);
+//    g.show();
+//    cout<<endl;
+//
+//    Path<SparseGraph> dfs(g, 0);
+//    cout<<"DFS : ";
+//    dfs.showPath(3);
+//
+//    ShortestPath<SparseGraph> bfs(g, 0);
+//    cout<<"BFS : ";
+//    bfs.showPath(3);
+
+     */
+
+
+    string filename = "testG1.txt";
+    int V = 8;
+    cout<<fixed<<setprecision(2);
+
+    // Test Weighted Dense Graph
+    WeightGraph::DenseGraph<double> g1  = WeightGraph::DenseGraph<double>(V, false);
+    WeightGraph::ReadGraph<WeightGraph::DenseGraph<double>,double> readGraph1(g1, filename);
+    g1.show();
     cout<<endl;
 
-    Path<SparseGraph> dfs(g, 0);
-    cout<<"DFS : ";
-    dfs.showPath(3);
-
-    ShortestPath<SparseGraph> bfs(g, 0);
-    cout<<"BFS : ";
-    bfs.showPath(3);
 
     cout << "finished!"<<endl;
     return 0;

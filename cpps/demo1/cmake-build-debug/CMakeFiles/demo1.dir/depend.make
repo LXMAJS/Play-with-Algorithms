@@ -23,5 +23,9 @@ CMakeFiles/demo1.dir/main.cpp.o: ../UnionFind/UnionFind3.h
 CMakeFiles/demo1.dir/main.cpp.o: ../UnionFind/UnionFind4.h
 CMakeFiles/demo1.dir/main.cpp.o: ../UnionFind/UnionFind5.h
 CMakeFiles/demo1.dir/main.cpp.o: ../UnionFind/UnionFindTestHelper.h
+CMakeFiles/demo1.dir/main.cpp.o: ../WeightGraph/DenseGraph.h
+CMakeFiles/demo1.dir/main.cpp.o: ../WeightGraph/Edge.h
+CMakeFiles/demo1.dir/main.cpp.o: ../WeightGraph/ReadGraph.h
+CMakeFiles/demo1.dir/main.cpp.o: ../WeightGraph/SparseGraph.h
 CMakeFiles/demo1.dir/main.cpp.o: ../main.cpp
 

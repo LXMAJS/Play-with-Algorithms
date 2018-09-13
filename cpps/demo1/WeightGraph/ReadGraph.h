@@ -2,8 +2,8 @@
 // Created by 黎进 on 2018/9/4.
 //
 
-#ifndef DEMO1_READGRAPH_H
-#define DEMO1_READGRAPH_H
+#ifndef DEMO1_WEIGHTGRAPH_READGRAPH_H
+#define DEMO1_WEIGHTGRAPH_READGRAPH_H
 
 #include <iostream>
 #include <fstream>
@@ -15,7 +15,7 @@ using namespace std;
 
 namespace WeightGraph {
 
-    template<typename Graph>
+    template<typename Graph, typename Weight>
     class ReadGraph {
 
     public:
@@ -42,13 +42,14 @@ namespace WeightGraph {
                 assert(getline(file, line));
                 stringstream ss(line);
                 int a, b;
-                ss >> a >> b;
+                Weight weight;
+                ss >> a >> b >> weight;
                 assert(a >= 0 && a <= V);
                 assert(b >= 0 && b <= V);
                 // 将边加到图中
-                graph.addEdge(a, b);
+                graph.addEdge(a, b, weight);
             }
         }
     };
 }
-#endif //DEMO1_READGRAPH_H
+#endif //DEMO1_WEIGHTGRAPH_READGRAPH_H

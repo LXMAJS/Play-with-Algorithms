@@ -2,11 +2,13 @@
 // Created by 黎进 on 2018/8/31.
 //
 
-#ifndef DEMO1_SPARSEGRAPH_H
-#define DEMO1_SPARSEGRAPH_H
+#ifndef DEMO1_WEIGHTGRAPH_SPARSEGRAPH_H
+#define DEMO1_WEIGHTGRAPH_SPARSEGRAPH_H
 
 #include <iostream>
 #include <vector>
+
+#include "Edge.h"
 
 using namespace std;
 
@@ -14,12 +16,13 @@ namespace WeightGraph{
     /*
      * 稀疏图，邻接表
      */
+    template <typename Weight>
     class SparseGraph {
     private:
         int n; // count of vertex
         int m; // count of edge
         bool directed; // if directed
-        vector<vector<int>> g; // graph
+        vector<vector<Edge<Weight> *>> g; // graph
 
     public:
         ///
@@ -29,11 +32,13 @@ namespace WeightGraph{
             this->n = n;
             this->m = 0;
             this->directed = directed;
-            g = vector<vector<int>>(n, vector<int>());
+            g = vector<vector<Edge<Weight> *>>(n, vector<Edge<Weight> *>());
         }
 
         ~SparseGraph() {
-            // Do nothing
+            for( int i = 0 ; i < n ; i ++ )
+                for( int j = 0 ; j < g[i].size() ; j ++ )
+                    delete g[i][j];
         }
 
         int V() { return n; }
@@ -49,7 +54,7 @@ namespace WeightGraph{
             assert(w >= 0 && w <= n);
 
             for (int i = 0; i < g[v].size(); i++) {
-                if (g[v][i] == w)
+                if (g[v][i]->other(v) == w)
                     return true;
             }
             return false;
@@ -58,14 +63,14 @@ namespace WeightGraph{
         ///
         /// \param v
         /// \param w
-        void addEdge(int v, int w) {
+        void addEdge(int v, int w, Weight weight) {
             assert(v >= 0 && v <= n);
             assert(w >= 0 && w <= n);
 
-            g[v].push_back(w);
+            g[v].push_back(new Edge<Weight>(v, w, weight));
             // 处理自环边ß
             if (v != w && !directed) {
-                g[w].push_back(v);
+                g[w].push_back(new Edge<Weight>(w, v, weight));
             }
             m++;
             return;
@@ -76,7 +81,7 @@ namespace WeightGraph{
             for (int i = 0; i < V(); i++) {
                 cout<<"vertex "<<i<<":\t";
                 for (int j = 0; j < g[i].size(); j++) {
-                    cout<<g[i][j]<<" ";
+                    cout<<"( to:"<<g[i][j]->w()<<",wt:"<<g[i][j]->wt()<<")\t";
                 }
                 cout<<endl;
             }
@@ -99,22 +104,22 @@ namespace WeightGraph{
 
             ///
             /// \return
-            int begin() {
+            Edge<Weight> * begin() {
                 index = 0;
                 if (G.g[v].size() > 0) {
                     return G.g[v][index];
                 }
-                return -1;
+                return NULL;
             }
 
             ///
             /// \return
-            int next(){
+            Edge<Weight> * next(){
                 index ++;
                 if(index < G.g[v].size()){
                     return G.g[v][index];
                 }
-                return -1;
+                return NULL;
             }
 
             ///
@@ -125,4 +130,4 @@ namespace WeightGraph{
         };
     };
 }
-#endif //DEMO1_SPARSEGRAPH_H
+#endif //DEMO1_WEIGHTGRAPH_SPARSEGRAPH_H

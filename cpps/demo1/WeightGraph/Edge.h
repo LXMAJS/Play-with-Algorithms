@@ -90,7 +90,7 @@ namespace WeightGraph{
         }
 
         bool operator==(Edge<Weight> &e){
-            return weight ==g e.wt();
+            return weight == e.wt();
         }
     };
 }
