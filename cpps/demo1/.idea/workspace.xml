@@ -12,13 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd75e96c-d400-4033-adde-c4933181cf46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WeightGraph/DenseGraph.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeightGraph/Edge.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeightGraph/ReadGraph.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeightGraph/SparseGraph.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/demo1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/demo1.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeightGraph/DenseGraph.h" beforeDir="false" afterPath="$PROJECT_DIR$/WeightGraph/DenseGraph.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,13 +47,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cpp" value="2725" />
-          <entry key="h" value="32712" />
+          <entry key="h" value="32989" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Doxygen file" value="59" />
-          <entry key="ObjectiveC" value="35378" />
+          <entry key="ObjectiveC" value="35655" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -86,7 +80,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="184">
               <caret line="153" selection-start-line="153" selection-end-line="153" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -95,18 +89,6 @@
                 <element signature="e#1670#2128#0" />
                 <element signature="e#2273#3296#0" />
                 <marker date="1536549514595" expanded="false" signature="3485:4210" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WeightGraph/Edge.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
-              <folding>
-                <element signature="e#161#178#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,11 +103,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WeightGraph/DenseGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="252">
+              <caret line="87" column="39" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
+              <folding>
+                <element signature="e#93#112#0" expanded="true" />
+                <element signature="e#247#264#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,9 +165,9 @@
         <option value="$PROJECT_DIR$/testG2.txt" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/WeightGraph/ReadGraph.h" />
-        <option value="$PROJECT_DIR$/WeightGraph/DenseGraph.h" />
         <option value="$PROJECT_DIR$/WeightGraph/SparseGraph.h" />
         <option value="$PROJECT_DIR$/WeightGraph/Edge.h" />
+        <option value="$PROJECT_DIR$/WeightGraph/DenseGraph.h" />
       </list>
     </option>
   </component>
@@ -279,19 +265,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533802930876</updated>
-      <workItem from="1533802933362" duration="71353000" />
+      <workItem from="1533802933362" duration="72071000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71353000" />
+    <option name="totallyTimeSpent" value="72071000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18526466" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18526466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -301,7 +287,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28313252" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28313252" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -629,21 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="153" selection-start-line="153" selection-end-line="153" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#188#1220#0" />
-            <element signature="e#1281#1600#0" />
-            <element signature="e#1670#2128#0" />
-            <element signature="e#2273#3296#0" />
-            <marker date="1536549514595" expanded="false" signature="3485:4210" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Graph/ShortestPath.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
@@ -662,13 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WeightGraph/DenseGraph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WeightGraph/SparseGraph.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-286">
@@ -678,10 +642,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightGraph/Edge.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+        <state relative-caret-position="844">
+          <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
           <folding>
             <element signature="e#161#178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#188#1220#0" />
+            <element signature="e#1281#1600#0" />
+            <element signature="e#1670#2128#0" />
+            <element signature="e#2273#3296#0" />
+            <marker date="1536549514595" expanded="false" signature="3485:4210" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightGraph/DenseGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="87" column="39" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
+          <folding>
+            <element signature="e#93#112#0" expanded="true" />
+            <element signature="e#247#264#0" expanded="true" />
           </folding>
         </state>
       </provider>

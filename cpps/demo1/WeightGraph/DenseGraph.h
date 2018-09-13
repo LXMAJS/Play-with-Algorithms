@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <vector>
+#include "Edge.h"
 
 using namespace std;
 
@@ -15,12 +16,13 @@ namespace WeightGraph {
     /*
      * advince vector
      */
+    template <typename Weight>
     class DenseGraph{
     private:
         int n; // count of vectrix
         int m; // count of edge
         bool directed; // if directed
-        vector<vector<bool>> g; // graph
+        vector<vector<Edge<Weight> *> g; // graph
 
     public:
         /// construction
@@ -32,7 +34,7 @@ namespace WeightGraph {
             this->directed = directed;
 
             for (int i = 0; i < n; i++) {
-                g.push_back( vector<bool>(n, false) ); //TODO: can't understand now
+                g.push_back( vector<Edge<Weight> *>(n, NULL) ); //TODO: can't understand now
             }
         }
 
@@ -51,24 +53,26 @@ namespace WeightGraph {
             assert(v >= 0 && v <= n);
             assert(w >= 0 && w <= n);
 
-            return g[v][w];
+            return g[v][w] != NULL;
         }
 
         ///  add edge
         /// \param v
         /// \param w
-        void addEdge(int v, int w) {
+        void addEdge(int v, int w, Weight weight) {
             assert(v >= 0 && v <= n);
             assert(w >= 0 && w <= n);
 
             // 去掉了平行边的概念
             if (hasEdge(v, w)) {
-                return;
+                delete g[v][w];
+                if(!directed)
+                    delete g[w][v];
             }
 
-            g[v][w] = true;
+            g[v][w] = new Edge(v, w, weight);
             if(!directed){
-                g[w][v] = true;
+                g[w][v] = new Edge(w, v, weight);
             }
             m++;
             return;
@@ -78,7 +82,10 @@ namespace WeightGraph {
         void show(){
             for (int i = 0; i < V(); i++) {
                 for (int j = 0; j < V(); j++) {
-                    cout<<g[i][j]<<" ";
+                    if( g[i][j] )
+                        cout<<g[i][j]->wt()<<"\t";
+                    else
+                        cout<<"NULL\t";
                 }
                 cout<<endl;
             }
@@ -102,14 +109,14 @@ namespace WeightGraph {
 
             ///
             /// \return
-            int begin(){
+            Edge<Weight>* begin(){
                 index = -1;
                 return next(); // 将index设置为-1，然后返回第一个next即可
             }
 
             ///
             /// \return
-            int next(){
+            Edge<Weight>* next(){
                 index += 1;
                 for ( ; index < G.V() ; index++) {
                     if(G.g[v][index])
