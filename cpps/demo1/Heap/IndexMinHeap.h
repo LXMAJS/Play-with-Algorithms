@@ -1,20 +1,20 @@
 //
-// Created by 黎进 on 2018/8/14.
+// Created by 黎进 on 2018/9/14.
 //
 
-#ifndef DEMO1_INDEXMAXHEAP_H
-#define DEMO1_INDEXMAXHEAP_H
+#ifndef DEMO1_INDEXMINHEAP_H
+#define DEMO1_INDEXMINHEAP_H
 
 #include <iostream>
 
 using namespace std;
 
 
-namespace IndexMaxHeap{
+namespace IndexMinHeap{
 
     // max heap
     template <typename Item>
-    class IndexMaxHeap{
+    class IndexMinHeap{
 
     private:
         Item * data;
@@ -28,7 +28,7 @@ namespace IndexMaxHeap{
         void shiftUp(int k){
 
             // if parent is little then child, swich two item's value
-            while( k > 1 && data[indexes[k/2]] < data[indexes[k]] ){
+            while( k > 1 && data[indexes[k/2]] > data[indexes[k]] ){
                 swap( indexes[k/2] , indexes[k] );
                 reverse[indexes[k/2]] = k/2;
                 reverse[index[k]] = k;
@@ -42,23 +42,23 @@ namespace IndexMaxHeap{
             int leftChild = k*2;
             while( leftChild <= count ){ // if has child
 
-                // choose the max child
-                int maxChild = data[k*2] > data[k*2 + 1] ? k*2 : k*2 + 1;
+                // choose the min child
+                int minChild = data[k*2] < data[k*2 + 1] ? k*2 : k*2 + 1;
 
-                if(data[k] >= data[maxChild]) break;
+                if(data[k] <= data[minChild]) break;
 
-                swap(indexes[maxChild], indexes[k]);
-                reverse[indexes[maxChild]] = maxChild;
+                swap(indexes[minChild], indexes[k]);
+                reverse[indexes[minChild]] = minChild;
                 reverse[indexes[k]] = k;
 
-                k = maxChild;
+                k = minChild;
             }
         }
 
 
     public:
         ///
-        MaxHeap(int capacity){
+        MinHeap(int capacity){
             data = new Item[capacity + 1]; // root item's index is 1(one), not 0(zero);
             indexes = new int[capacity + 1];
             reverse = new int[capacity + 1];
@@ -72,7 +72,7 @@ namespace IndexMaxHeap{
         }
 
         ///
-        ~MaxHeap(){
+        ~MinHeap(){
             delete [] data;
             delete [] indexes;
             delete [] reverse;
@@ -108,7 +108,7 @@ namespace IndexMaxHeap{
         }
 
         ///
-        Item extractMaxItem(){
+        Item extractMinItem(){
             assert( count > 0);
 
             Item res = data[indexes[1]];
@@ -123,7 +123,7 @@ namespace IndexMaxHeap{
         }
 
         ///
-        int extracMaxIndex(){
+        int extracMinIndex(){
             assert( count > 0);
 
             int res = indexes[1] -1; // makesure that return index start witb 0(zero)
@@ -170,4 +170,4 @@ namespace IndexMaxHeap{
     };
 }
 
-#endif //DEMO1_INDEXMAXHEAP_H
+#endif //DEMO1_INDEXMINHEAP_H

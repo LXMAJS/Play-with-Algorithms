@@ -12,11 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd75e96c-d400-4033-adde-c4933181cf46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Heap/MinHeap.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeightGraph/LazyPrimMST.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/demo1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/demo1.cbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Heap/IndexMinHeap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Heap/IndexMaxHeap.h" beforeDir="false" afterPath="$PROJECT_DIR$/Heap/IndexMaxHeap.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,24 +48,24 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cpp" value="2830" />
-          <entry key="h" value="34336" />
+          <entry key="h" value="34377" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Doxygen file" value="60" />
-          <entry key="ObjectiveC" value="37106" />
+          <entry key="ObjectiveC" value="37147" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="h" value="47" />
+          <entry key="h" value="49" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="47" />
+          <entry key="ObjectiveC" value="49" />
           <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
@@ -94,14 +91,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WeightGraph/LazyPrimMST.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+            <state relative-caret-position="216">
+              <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
               <folding>
                 <element signature="e#119#138#0" expanded="true" />
                 <element signature="e#232#265#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Heap/IndexMinHeap.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+              <folding>
+                <element signature="e#195#210#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,7 +130,6 @@
         <option value="$PROJECT_DIR$/Questions.h" />
         <option value="$PROJECT_DIR$/Heap/MaxHeap.h" />
         <option value="$PROJECT_DIR$/Heap/HeapSort.h" />
-        <option value="$PROJECT_DIR$/Heap/IndexMaxHeap.h" />
         <option value="$PROJECT_DIR$/BinarySearch/BinarySearch.h" />
         <option value="$PROJECT_DIR$/Practice/Repetition.h" />
         <option value="$PROJECT_DIR$/BinarySearch/BinarySearchTree.h" />
@@ -153,6 +161,8 @@
         <option value="$PROJECT_DIR$/WeightGraph/SparseGraph.h" />
         <option value="$PROJECT_DIR$/Heap/MinHeap.h" />
         <option value="$PROJECT_DIR$/WeightGraph/LazyPrimMST.h" />
+        <option value="$PROJECT_DIR$/Heap/IndexMaxHeap.h" />
+        <option value="$PROJECT_DIR$/Heap/IndexMinHeap.h" />
       </list>
     </option>
   </component>
@@ -251,12 +261,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533802930876</updated>
-      <workItem from="1533802933362" duration="76770000" />
+      <workItem from="1533802933362" duration="77280000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76770000" />
+    <option name="totallyTimeSpent" value="77280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -644,13 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Heap/IndexMaxHeap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Heap/MinHeap.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -679,11 +682,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightGraph/LazyPrimMST.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+        <state relative-caret-position="216">
+          <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
           <folding>
             <element signature="e#119#138#0" expanded="true" />
             <element signature="e#232#265#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Heap/IndexMaxHeap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="172" column="20" selection-start-line="172" selection-start-column="20" selection-end-line="172" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Heap/IndexMinHeap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+          <folding>
+            <element signature="e#195#210#0" expanded="true" />
           </folding>
         </state>
       </provider>
