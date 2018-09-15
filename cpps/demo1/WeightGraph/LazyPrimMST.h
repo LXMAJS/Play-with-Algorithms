@@ -76,6 +76,18 @@ namespace LazyPrimMST{
         ~LazyPrimMST(){
             delete[] marked;
         }
+
+        ///
+        /// \return
+        vector<WeightGraph::Edge<Weight>> mstEdges(){
+            return mst;
+        };
+
+        ///
+        /// \return
+        Weight result(){
+            return mstWeight;
+        };
     };
 }
 
