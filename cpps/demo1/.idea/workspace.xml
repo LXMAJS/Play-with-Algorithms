@@ -47,13 +47,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cpp" value="2830" />
-          <entry key="h" value="36367" />
+          <entry key="h" value="36368" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Doxygen file" value="70" />
-          <entry key="ObjectiveC" value="39127" />
+          <entry key="ObjectiveC" value="39128" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -290,12 +290,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533802930876</updated>
-      <workItem from="1533802933362" duration="80153000" />
+      <workItem from="1533802933362" duration="80205000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80153000" />
+    <option name="totallyTimeSpent" value="80205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />

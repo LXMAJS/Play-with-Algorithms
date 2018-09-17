@@ -43,7 +43,7 @@ namespace KruskalMST{
 
             // 借助并查集
             UF5::UnionFind uf(graph.V());
-            while( !pq.isEmpty() && mst.size() < graph.V() - g1 ){
+            while( !pq.isEmpty() && mst.size() < graph.V() - 1 ){
                 WeightGraph::Edge<Weight> e = pq.extractMinItem();
                 // 如果形成了环，那么不取这条边
                 if(uf.isConnected(e.v(), e.w()))
