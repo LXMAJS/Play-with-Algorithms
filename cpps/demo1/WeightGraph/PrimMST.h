@@ -78,7 +78,7 @@ namespace PrimMST {
                 mst.push_back( *edgeTo[v] );
                 visit(v);
             }
-            
+
             // calculate mst's weight
             mstWeight = mst[0].wt();
             for (int j = 1; j < mst.size(); j++) {
