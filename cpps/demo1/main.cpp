@@ -177,16 +177,6 @@ int main() {
      */
 
 
-    string filename = "testG1.txt";
-    int V = 8;
-    cout<<fixed<<setprecision(2);
-
-    // Test Weighted Dense Graph
-    WeightGraph::DenseGraph<double> g1  = WeightGraph::DenseGraph<double>(V, false);
-    WeightGraph::ReadGraph<WeightGraph::DenseGraph<double>,double> readGraph1(g1, filename);
-    g1.show();
-    cout<<endl;
-
 
     cout << "finished!"<<endl;
     return 0;
