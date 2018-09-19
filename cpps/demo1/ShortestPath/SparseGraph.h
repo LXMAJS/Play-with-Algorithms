@@ -2,8 +2,8 @@
 // Created by 黎进 on 2018/9/19.
 //
 
-#ifndef DEMO1_SPARSEGRAPH_H
-#define DEMO1_SPARSEGRAPH_H
+#ifndef DEMO1_SHORTESTPATH_SPARSEGRAPH_H
+#define DEMO1_SHORTESTPATH_SPARSEGRAPH_H
 
 #include <iostream>
 #include <vector>
@@ -131,4 +131,4 @@ namespace ShortestPath {
     };
 }
 
-#endif //DEMO1_SPARSEGRAPH_H
+#endif //DEMO1_SHORTESTPATH_SPARSEGRAPH_H

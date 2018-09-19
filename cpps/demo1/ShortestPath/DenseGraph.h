@@ -2,8 +2,8 @@
 // Created by 黎进 on 2018/9/19.
 //
 
-#ifndef DEMO1_DENSEGRAPH_H
-#define DEMO1_DENSEGRAPH_H
+#ifndef DEMO1_SHORTESTPATH_DENSEGRAPH_H
+#define DEMO1_SHORTESTPATH_DENSEGRAPH_H
 
 #include <iostream>
 #include <cassert>
@@ -135,4 +135,4 @@ namespace ShortestPath {
     };
 }
 
-#endif //DEMO1_DENSEGRAPH_H
+#endif //DEMO1_SHORTESTPATH_DENSEGRAPH_H

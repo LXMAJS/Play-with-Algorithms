@@ -12,16 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd75e96c-d400-4033-adde-c4933181cf46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ShortestPath/DenseGraph.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShortestPath/Edge.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShortestPath/ReadGraph.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShortestPath/SparseGraph.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShortestPath/Dijkstra.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/demo1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/demo1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShortestPath/DenseGraph.h" beforeDir="false" afterPath="$PROJECT_DIR$/ShortestPath/DenseGraph.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShortestPath/Edge.h" beforeDir="false" afterPath="$PROJECT_DIR$/ShortestPath/Edge.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShortestPath/ReadGraph.h" beforeDir="false" afterPath="$PROJECT_DIR$/ShortestPath/ReadGraph.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShortestPath/SparseGraph.h" beforeDir="false" afterPath="$PROJECT_DIR$/ShortestPath/SparseGraph.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/demo1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/demo1.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,25 +53,25 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cpp" value="2830" />
-          <entry key="h" value="36804" />
+          <entry key="h" value="38660" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Doxygen file" value="73" />
-          <entry key="ObjectiveC" value="39561" />
+          <entry key="Doxygen file" value="78" />
+          <entry key="ObjectiveC" value="41412" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cpp" value="1" />
-          <entry key="h" value="65" />
+          <entry key="h" value="66" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="66" />
+          <entry key="ObjectiveC" value="67" />
           <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
@@ -111,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
+            <state relative-caret-position="614">
               <caret line="177" selection-start-line="177" selection-end-line="177" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -121,77 +118,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ShortestPath/DenseGraph.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-              <folding>
-                <element signature="e#93#112#0" expanded="true" />
-                <element signature="e#211#228#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ShortestPath/SparseGraph.h">
+        <entry file="file://$PROJECT_DIR$/ShortestPath/Dijkstra.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="655">
+              <caret line="75" column="13" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
               <folding>
-                <element signature="e#95#114#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WeightGraph/SparseGraph.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="131" selection-end-column="1" />
-              <folding>
-                <element signature="e#119#138#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WeightGraph/DenseGraph.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-              <folding>
-                <element signature="e#117#136#0" expanded="true" />
-                <element signature="e#271#288#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ShortestPath/Edge.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-              <folding>
-                <element signature="e#81#100#0" expanded="true" />
-                <element signature="e#182#199#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ShortestPath/ReadGraph.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-              <folding>
-                <element signature="e#91#110#0" expanded="true" />
-                <element signature="e#207#240#0" expanded="true" />
+                <element signature="e#115#134#0" expanded="true" />
+                <element signature="e#290#323#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -248,9 +182,10 @@
         <option value="$PROJECT_DIR$/WeightGraph/KruskalMST.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/ShortestPath/Edge.h" />
-        <option value="$PROJECT_DIR$/ShortestPath/ReadGraph.h" />
-        <option value="$PROJECT_DIR$/ShortestPath/DenseGraph.h" />
         <option value="$PROJECT_DIR$/ShortestPath/SparseGraph.h" />
+        <option value="$PROJECT_DIR$/ShortestPath/DenseGraph.h" />
+        <option value="$PROJECT_DIR$/ShortestPath/ReadGraph.h" />
+        <option value="$PROJECT_DIR$/ShortestPath/Dijkstra.h" />
       </list>
     </option>
   </component>
@@ -349,19 +284,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533802930876</updated>
-      <workItem from="1533802933362" duration="81754000" />
+      <workItem from="1533802933362" duration="84553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81754000" />
+    <option name="totallyTimeSpent" value="84553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18526466" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.18526466" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32891566" />
@@ -790,9 +725,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ShortestPath/SparseGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="133" column="28" selection-start-line="133" selection-start-column="28" selection-end-line="133" selection-end-column="28" />
+          <folding>
+            <element signature="e#95#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ShortestPath/DenseGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="137" column="28" selection-start-line="137" selection-start-column="28" selection-end-line="137" selection-end-column="28" />
+          <folding>
+            <element signature="e#93#112#0" expanded="true" />
+            <element signature="e#211#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
+        <state relative-caret-position="614">
           <caret line="177" selection-start-line="177" selection-end-line="177" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -801,13 +757,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ShortestPath/Edge.h">
+    <entry file="file://$PROJECT_DIR$/WeightGraph/SparseGraph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="225">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding>
-            <element signature="e#81#100#0" expanded="true" />
-            <element signature="e#182#199#0" expanded="true" />
+            <element signature="e#119#138#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -823,10 +778,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ShortestPath/Edge.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+          <folding>
+            <element signature="e#81#100#0" expanded="true" />
+            <element signature="e#182#199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ShortestPath/ReadGraph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="675">
+          <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
           <folding>
             <element signature="e#91#110#0" expanded="true" />
             <element signature="e#207#240#0" expanded="true" />
@@ -834,33 +800,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WeightGraph/SparseGraph.h">
+    <entry file="file://$PROJECT_DIR$/ShortestPath/Dijkstra.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="131" selection-end-column="1" />
+        <state relative-caret-position="655">
+          <caret line="75" column="13" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
           <folding>
-            <element signature="e#119#138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ShortestPath/DenseGraph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="e#93#112#0" expanded="true" />
-            <element signature="e#211#228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ShortestPath/SparseGraph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="e#95#114#0" expanded="true" />
+            <element signature="e#115#134#0" expanded="true" />
+            <element signature="e#290#323#0" expanded="true" />
           </folding>
         </state>
       </provider>
