@@ -103,7 +103,7 @@ namespace ShortestPath {
         ///
         /// \param w
         /// \param vec
-        void shortestPath(int w, vector<Edge<Weight> *> vec){
+        void shortestPath(int w, vector<Edge<Weight>> &vec){
             assert(w >= 0 && w <= G.V());
             assert(hasPath(w));
 

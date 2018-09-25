@@ -127,6 +127,9 @@
 		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/Practice/Tree.h">
 			<Option target="demo1"/>
 		</Unit>
+		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/ShortestPath/BellmanFord.h">
+			<Option target="demo1"/>
+		</Unit>
 		<Unit filename="/Users/lijin/Documents/github/issues/cpps/demo1/ShortestPath/DenseGraph.h">
 			<Option target="demo1"/>
 		</Unit>
