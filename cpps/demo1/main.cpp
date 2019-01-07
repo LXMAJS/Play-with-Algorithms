@@ -29,6 +29,15 @@
 
 using namespace std;
 
+int NumberOf1(int n) {
+    int count = 0;
+    while(n != 0){
+        count ++;
+        n = n & (n-1);
+    }
+    return count;
+}
+
 int main() {
 
     /* sort alogrithms test codes
@@ -177,7 +186,10 @@ int main() {
      */
 
 
+    int num = 45;
+    cout << NumberOf1(num) <<endl;
 
     cout << "finished!"<<endl;
+
     return 0;
 }
